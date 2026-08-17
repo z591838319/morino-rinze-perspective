@@ -1,0 +1,1734 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=980">
+
+    <meta name="description" content="シャニマス攻略 Wiki*">
+        <meta property="og:url" content="https://wikiwiki.jp/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="杜野凛世 - シャニマス攻略 Wiki*" />
+    <meta property="og:description" content="シャニマス攻略 Wiki*" />
+    <meta property="og:site_name" content="シャニマス攻略 Wiki*" />
+    <meta property="og:image" content="https://cdn.wikiwiki.jp/to/w/common/image/wikiwiki_ogp.png?v=4" />
+    <title>杜野凛世 - シャニマス攻略 Wiki*</title>
+
+    <link rel="alternate" href="/shinycolors/::cmd/mixirss" type="application/rss+xml" title="RSS" />
+    <link rel="icon" href="https://cdn.wikiwiki.jp/to/w/common/user-favicon.ico?v=4"/>
+    <link rel="stylesheet" href="https://cdn.wikiwiki.jp/to/w/common/assets/dist/wikiwiki-dbc3538ca778dc7fcfbe.min.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.wikiwiki.jp/to/w/common/assets/dist/wikiwiki-opt-tablesort-d6d9df5c36f22c277416.min.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.wikiwiki.jp/to/w/common/assets/dist/skin-default-8896c2d3fdf78b1e81a0.min.css" type="text/css">
+    
+    <script type="text/javascript" src="https://cdn.wikiwiki.jp/to/w/common/assets/dist/ad-1bf004520fc167abbea6.min.js"></script>
+    <script>
+    var wi_stay = (function () {
+        var wi_data_raw = localStorage.getItem('browsingStatistics');
+        var wi_data = wi_data_raw ? (JSON.parse(wi_data_raw) || {}) : {};
+        var stay = Number(wi_data.stay);
+        if (isNaN(stay)) {
+            stay = 0;
+        }
+        return stay;
+    })();
+    var wi_data_raw = localStorage.getItem('usageStatistics');
+    var wi_data =     wi_data_raw ? (JSON.parse(wi_data_raw) || {}) : {};
+    var wi_edit =     String(wi_data.edit || 0);
+    var wi_freeze =   String(wi_data.freeze || 0);
+    var wi_comment =  String(wi_data.comment || 0);
+    var wi_group = String(wi_data.group || "N");
+    var wi_smsAuth = wi_data.smsAuth || false;
+    var wi_hasPosted = wi_data.hasPosted || false;
+    var wi_agreement = String(wi_data.agreementStatus || "false");
+    if (document.referrer.length !== 0) {
+        var wi_uri = new URL(document.referrer);
+        var wi_referer = wi_uri.hostname;
+    } else {
+        var wi_referer = "unknown";
+    }
+
+    // Chromium系判定
+    function isChromium() {
+        var ua = navigator.userAgent;
+        // Edge, Opera, Chrome, Chromium, Brave など
+        return /\b(Chrome|Chromium|Edg|OPR|Brave)\b/.test(ua) && !/Silk|UCBrowser|SamsungBrowser|CriOS|FxiOS|OPiOS|EdgiOS/.test(ua);
+    }
+
+    var wi_ismobile;
+    var wi_device;
+    if (isChromium() && navigator.userAgentData) {
+        wi_ismobile = navigator.userAgentData.mobile;
+        if (wi_ismobile) {
+            if (navigator.userAgentData.platform === "Android") {
+                wi_device = "and";
+            } else {
+                wi_device = "ios";
+            }
+        } else {
+            wi_device = "pc";
+        }
+    } else {
+        wi_ismobile = !!navigator.userAgent.match(/iPhone|Android.+Mobile/);
+        if (navigator.userAgent.match(/Android.+Mobile/)) {
+            wi_device = "and";
+        } else if (navigator.userAgent.match(/iPhone/)) {
+            wi_device = "ios";
+        } else {
+            wi_device = "pc";
+        }
+    }
+
+    var wi_isportrait = window.matchMedia("(orientation: portrait)").matches;
+    var wi_isinbound = wi_referer.includes(window.location.hostname) ? false : true;
+    var wi_random100 = Math.floor(Math.random() * (100 - 1) + 1);
+    var wi_random110 = Math.floor(Math.random() * 10) + 1;
+    var wi_isread_yet = true;
+    var wi_location_hash = location.hash || false;
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y8FN9EFS7"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3Y8FN9EFS7', {
+        'content_group': 'shinycolors',
+        'user_properties': {
+            'user_group':     wi_group,
+            'user_agreement': wi_agreement,
+            'edit_count':     wi_edit,
+            'comment_count':  wi_comment,
+            'sms_auth':       String(wi_smsAuth)
+        }
+    });
+    
+</script>
+
+<script>
+    window.wikiFq = createWikiFq();
+</script>
+<script>
+    var wi_recref = recordReferrerDomain();
+</script>
+
+<script>
+const visitData_20241117 = (() => {
+const RESET_INTERVAL_MINUTES = 30;
+const now = Date.now();
+const resetIntervalMs = RESET_INTERVAL_MINUTES * 60 * 1000;
+const storageKey = "internalVisitData";
+let data = JSON.parse(localStorage.getItem(storageKey)) || { count: 0, lastVisit: now };
+if (now - data.lastVisit > resetIntervalMs) data = { count: 0, lastVisit: now };
+if (document.referrer && new URL(document.referrer).hostname === window.location.hostname) {
+data = { count: data.count + 1, lastVisit: now };
+localStorage.setItem(storageKey, JSON.stringify(data));
+}
+return data;
+})();
+
+const int_conditions = [
+wi_ismobile,
+wi_group === 'N',
+wi_agreement === 'false',
+!wi_isinbound,
+visitData_20241117.count === 1,
+];
+
+const int_conditions_pc = [
+    !wi_ismobile,
+    wi_group === 'N',
+    wi_agreement === 'false',
+    !wi_isinbound,
+    visitData_20241117.count === 1,
+];
+</script>
+<script>
+(function () {
+  const FLAG = "iminst_pc";
+  const url = new URL(location.href);
+
+  if (url.searchParams.get(FLAG) === "1") {
+    url.searchParams.delete(FLAG);
+    history.replaceState(null, "", url.toString());
+    return;
+  }
+
+  if (Array.isArray(int_conditions_pc) && int_conditions_pc.every(Boolean)) {
+    url.searchParams.set(FLAG, "1");
+    location.href = url.toString();
+  }
+})();
+</script>
+<script>
+(function(){
+  const url=new URL(location.href);
+  const f=wi_device==="ios"?"iminst_ios":wi_device==="and"?"iminst_and":null;
+  if(!f)return;
+  if(url.searchParams.get(f)==="1"){
+    url.searchParams.delete(f);
+    history.replaceState(null,"",url.toString());
+    return;
+  }
+  if(Array.isArray(int_conditions)&&int_conditions.every(Boolean)){
+    url.searchParams.set(f,"1");
+    location.href=url.toString();
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KQ52VZ3');</script>
+<!-- End Google Tag Manager -->
+
+
+<script async="async" src="https://flux-cdn.com/client/ukiuki/flux_wikiwiki_AS_TM_AT.min.js"></script>
+<script type="text/javascript">
+    var pbjs = pbjs || {};
+    pbjs.que = pbjs.que || [];
+</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+
+var wi_adslot_rectangle = [[300,250],[1,1]];
+var wi_adslot = [[300,250],[1,1]];
+if (document.documentElement.clientWidth > 406) {
+  wi_adslot_rectangle = [[300,250],[336,280],[1,1]];
+  wi_adslot = [[468,60],[300,250],[1,1]];
+}
+
+window.defineSlotFlux = [];
+if (wi_ismobile && wi_isportrait) {
+  defineSlotFlux.push({"slotID": "div-gpt-ad-1563441919648-0", "sizes": [[320, 100], [320, 50]], "slotName":"WIKIWIKI_SP_OVERLAY"});
+}
+    if (wi_isinbound && wi_ismobile && wi_group == "N" && wi_agreement === "false") {
+      defineSlotFlux.push({"slotID": "div-gpt-ad-1563430750445-0", "sizes": [[300,250]], "slotName":"WIKIWIKI_SP_INBOUND"});
+    } else if (wi_isinbound && wi_group == "N" && wi_agreement === "false") {
+      defineSlotFlux.push({"slotID": "div-gpt-ad-1567409776345-0", "sizes": [[300,250]], "slotName":"WIKIWIKI_PC_INBOUND"});
+      defineSlotFlux.push({"slotID": "div-gpt-ad-1658802281376-0", "sizes": [[300,250]], "slotName":"WIKIWIKI_PC_INBOUND_RIGHT"});
+    }
+  if (wi_ismobile) {
+    defineSlotFlux.push({"slotID": "div-gpt-ad-1567408559923-0", "sizes": [[300,250]], "slotName":"WIKIWIKI_SP_SECOND"});
+  } else {
+    defineSlotFlux.push({"slotID": "div-gpt-ad-1567408559923-0", "sizes": [[300,250]], "slotName":"WIKIWIKI_PC_BOTTOM_LEFT"});
+    defineSlotFlux.push({"slotID": "div-gpt-ad-1658912377789-0", "sizes": [[300,250]], "slotName":"WIKIWIKI_PC_BOTTOM_RIGHT"});
+  }
+</script>
+<script type="text/javascript">
+if (defineSlotFlux.length) {
+    var readyBids = {
+        prebid: false,
+        google: false
+    };
+    var failSafeTimeout = 3e3; // 3秒でフェイルセーフ発動
+    var launchAdServer = function () {
+        if (!readyBids.prebid) {
+            return;
+        }
+        requestAdServer();
+    };
+    var requestAdServer = function () {
+        if (!readyBids.google) {
+            readyBids.google = true;
+            googletag.cmd.push(function () {
+                pbjs.que.push(function () {
+                    pbjs.setTargetingForGPTAsync();
+                });
+                googletag.pubads().refresh();
+            });
+        }
+    };
+}
+</script>
+<script>
+googletag.cmd.push(function() {
+    if (wi_ismobile && wi_isportrait) {
+        googletag.defineSlot('/19033742/WIKIWIKI_SP_OVERLAY',[[320,100],[320,50],[1,1]],'div-gpt-ad-1563441919648-0').addService(googletag.pubads());
+    }
+    if (wi_isinbound && wi_ismobile && wi_group == "N" && wi_agreement === "false") {
+      googletag.defineSlot('/19033742/WIKIWIKI_SP_INBOUND',[[300,250]],
+        'div-gpt-ad-1563430750445-0').setCollapseEmptyDiv(true).addService(googletag.pubads());
+    } else if (wi_isinbound && wi_group == "N" && wi_agreement === "false") {
+      googletag.defineSlot('/19033742/WIKIWIKI_PC_INBOUND',[[336,280],[300,250]],
+        'div-gpt-ad-1567409776345-0').setCollapseEmptyDiv(true).addService(googletag.pubads());
+      googletag.defineSlot('/19033742/WIKIWIKI_PC_INBOUND_RIGHT',[[336,280],[300,250]],
+        'div-gpt-ad-1658802281376-0').setCollapseEmptyDiv(true).addService(googletag.pubads());
+    }
+    if (wi_ismobile) {
+        googletag.defineSlot('/19033742/WIKIWIKI_SP_SECOND',[[300,250]],
+        'div-gpt-ad-1567408559923-0').addService(googletag.pubads());
+    } else {
+        googletag.defineSlot('/19033742/WIKIWIKI_PC_BOTTOM_LEFT',[[336,280],[300,250]],
+        'div-gpt-ad-1567408559923-0').addService(googletag.pubads());
+        googletag.defineSlot('/19033742/WIKIWIKI_PC_BOTTOM_RIGHT',[[336,280],[300,250]],
+        'div-gpt-ad-1658912377789-0').addService(googletag.pubads());
+    }
+    googletag.pubads().setTargeting("gpolicy","sunny");
+    googletag.pubads().setTargeting("site","shinycolors");
+    googletag.pubads().collapseEmptyDivs();
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        var slot = event.slot;
+        if (document.getElementById(slot.getSlotElementId()) != null){
+            var slotElm = document.getElementById(slot.getSlotElementId());
+            if (slotElm && slotElm.className === 'overlay-ad-wrapper') {
+                var overlayRenderedEvent = document.createEvent('Event');
+                overlayRenderedEvent.initEvent('overlay-ad-rendered', true, true);
+                slotElm.dispatchEvent(overlayRenderedEvent);
+            }
+        }
+    });
+    googletag.pubads().enableLazyLoad({
+        fetchMarginPercent: 50,   // 0.5画面分まできたらリクエスト
+        renderMarginPercent: 50,  // 0.5画面分まできたら描画
+        mobileScaling: 2.0        // モバイルはスクロールが早いため2倍（1.0画面分）にする
+    });
+    if (defineSlotFlux.length) {googletag.pubads().disableInitialLoad();};
+    googletag.enableServices();
+    if (defineSlotFlux.length) {
+        pbjs.que.push(function () {
+            pbFlux.prebidBidder();
+        });
+    }
+});
+</script>
+
+
+<script type="text/javascript">
+if (defineSlotFlux.length) {
+    // set failsafe timeout
+    setTimeout(function () {
+        requestAdServer();
+    }, failSafeTimeout);
+}
+</script>
+
+<script>
+googletag.cmd.push(function() {
+  googletag.pubads()
+    .setTargeting("wi_agreement",     String(wi_data.agreementStatus || "false"))
+    .setTargeting("wi_group",     String(wi_data.group || "N"))
+    .setTargeting("wi_comment",   wi_comment.length.toString())
+    .setTargeting("wi_edit",      wi_edit.length.toString())
+    .setTargeting("wi_freeze",    wi_freeze.length.toString())
+    .setTargeting("wi_smsAuth",   String(wi_data.smsAuth || false))
+    .setTargeting("wi_hasPosted", String(wi_data.hasPosted || false))
+    .setTargeting("wi_referer",   String(wi_referer || "unknown"))
+    .setTargeting("wi_random110", String(wi_random110 || "0"))
+    .setTargeting("wi_hour", ('0' + new Date().getHours()).slice(-2));
+});
+</script>
+
+<style>
+.pc-caption-ad-default {
+    margin-top:20px;
+    display:flex;
+    justify-content:flex-start;
+    gap: 10px 5px;
+    min-height:280px;
+    position: sticky;
+    z-index: 3;
+    top: 45px;
+}
+
+.pc-caption-ad-center{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap: 10px 5px;
+    min-height:280px;
+    position: sticky;
+    z-index: 3;
+    top: 45px;
+}
+.pc-caption-ad-mobile{
+    margin-top:20px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:center;
+    min-height:331px;
+    position: sticky;
+    z-index: 3;
+    top: 45px;
+}
+.pc-caption-ad-mobile-300x600{
+    margin-top:20px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:center;
+    min-height:331px;
+}
+.default-advertisement {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--!Font Awesome Pro 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M16 48l0 416 544 0 0-416L16 48zM0 32l16 0 544 0 16 0 0 16 0 416 0 16-16 0L16 480 0 480l0-16L0 48 0 32zM320 280a56 56 0 1 0 112 0 56 56 0 1 0 -112 0zm56-72c22.6 0 42.8 10.4 56 26.7l0-66.7 0-8 16 0 0 8 0 112 0 64 0 8-16 0 0-8 0-18.7c-13.2 16.3-33.4 26.7-56 26.7c-39.8 0-72-32.2-72-72s32.2-72 72-72zM183.1 160l5.2 0 7.3 0 5.2 0 2.1 4.8L284.2 352l-17.4 0-20.8-48-107.8 0-20.8 48-17.4 0L181 164.8l2.1-4.8zM145 288l94 0L192 179.7 145 288z' fill='%23BBB'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+}
+
+@media (max-width: 500px) {
+  .caption-flybox:has(iframe[id^="google_ads_iframe_"]) {
+    position: relative;
+    min-height: 450px;
+  }
+}
+</style>
+
+
+<script>
+googletag.cmd.push(function() {
+    const pcCaptionPaths = [
+        '/19033742/WIKIWIKI_PC_CAPTION',
+        '/19033742/WIKIWIKI_PC_CAPTION_SIDE_BY',
+        '/19033742/WIKIWIKI_PC_CAPTION_20TH',
+        '/19033742/WIKIWIKI_CAPTION_B'
+    ];
+
+    const spCaptionPaths = [
+        '/19033742/WIKIWIKI_SP_CAPTION',
+        '/19033742/WIKIWIKI_SP_CAPTION_300x600'
+    ];
+
+    googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        const slotElement = document.getElementById(event.slot.getSlotElementId());
+        const parent = slotElement?.parentNode;
+
+        if (parent && !event.isEmpty) {
+            if (pcCaptionPaths.includes(event.slot.getAdUnitPath())) {
+                parent.classList.add(parent.clientWidth < 769 ? "pc-caption-ad-center" : "pc-caption-ad-default");
+            } else if (spCaptionPaths.includes(event.slot.getAdUnitPath())) {
+                if (event.slot.getAdUnitPath() === '/19033742/WIKIWIKI_SP_CAPTION_300x600') {
+                    parent.classList.add("pc-caption-ad-mobile-300x600");
+                } else {
+                    parent.classList.add("pc-caption-ad-mobile");
+                }
+            }
+        }
+    });
+
+    googletag.pubads().addEventListener('slotOnload', function(event) {
+        const slotElement = document.getElementById(event.slot.getSlotElementId());
+        slotElement?.parentNode?.classList.remove("default-advertisement");
+    });
+});
+</script>
+
+<link rel="preload" as="script" href="https://pdn.adingo.jp/p.js">
+<link rel="preconnect" href="https://sh.adingo.jp" crossorigin="use-credentials">
+    <link rel="canonical" href="https://wikiwiki.jp/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96">
+    <style>
+@media screen and (min-width: 820px) {
+  .container-wrapper {
+    min-width: 930px;
+    max-width: 930px;
+  }
+}
+</style>
+<style>
+  body {
+      font-family: Verdana, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+      font-size: 12px;
+  }
+</style>
+<style>
+  @media screen and (max-width: 819px), print and (max-width: 180mm) {
+    body {
+        font-size: 13px;
+    }
+  }
+</style>
+        <script>
+        window.globalParamsContainer = {"smsAuthParams":{"actionTrollingDefenceCheck":"\/shinycolors\/::cmd\/trolling_defence_pass","actionSubmitNumber":"\/p\/sms-auth\/code\/request","actionSubmitCode":"\/p\/sms-auth\/code\/activate","cookieName":"authkey"},"editAssistantImgSrc":{"face_smile":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/smile.png?v=4","face_bigsmile":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/bigsmile.png?v=4","face_huh":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/huh.png?v=4","face_oh":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/oh.png?v=4","face_wink":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/wink.png?v=4","face_sad":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/sad.png?v=4","face_worried":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/worried.png?v=4","face_tear":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/tear.png?v=4","face_tere":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/tere.png?v=4","face_shock":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/shock.png?v=4","face_heart":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/heart.png?v=4","face_star":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/star.gif?v=4","face_hatena":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/hatena.gif?v=4","face_tip":"https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/face\/tip.gif?v=4"},"experimentalFeature":false};
+    </script>
+</head>
+<body class="">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ52VZ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<style>
+/* 1 */
+@media (max-width: 500px) {
+    body {
+        margin-bottom: 129px !important;
+        transition: margin-bottom 0.4s ease-in-out;
+    }
+    body:has(#div-gpt-ad-1563441919648-0 iframe[height="50"]) {
+        margin-bottom: 79px !important;
+    }
+}
+
+/* 2 */
+#overlay-anchor-wrapper {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    width: 100%;
+    z-index: 99998;
+    pointer-events: none;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out 10s;
+}
+
+body:has(#div-gpt-ad-1563441919648-0 iframe) #overlay-anchor-wrapper {
+    transform: translateY(0);
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.6s;
+}
+
+/* 3 */
+#pc-overlay-ad-parent-container {
+    contain: layout style;
+    content-visibility: auto;
+
+    width: 100%;
+    background-color: var(--h2-background-color, #ffffff) !important;
+    padding-top: 5px;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.1);
+    pointer-events: auto;
+
+    max-height: 105px;
+    height: auto;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: visible !important;
+}
+
+#pc-overlay-ad-parent-container:has(iframe[height="50"]) {
+    max-height: 60px;
+}
+
+/* 4 */
+#pc-overlay-ad-close-button {
+    position: absolute;
+    top: -24px;
+    right: 12px;
+    width: 38px; height: 24px;
+    background-color: var(--h2-background-color, #ffffff) !important;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    cursor: pointer;
+    pointer-events: auto;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.6s ease-out 10s, transform 0.6s ease-out 10s;
+}
+
+body:has(#div-gpt-ad-1563441919648-0 iframe) #pc-overlay-ad-close-button {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out 1.8s, transform 0.6s ease-out 1.8s;
+}
+
+#pc-overlay-ad-close-button svg {
+    width: 14px; height: 14px;
+    fill: var(--h2-text-color, #666666) !important;
+}
+
+/* 5 */
+#ad-close-trigger { display: none; }
+
+#ad-close-trigger:checked ~ #overlay-anchor-wrapper {
+    transform: translateY(100%) !important;
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 1, 1), opacity 0.4s cubic-bezier(0.4, 0, 1, 1) !important;
+    pointer-events: none;
+}
+
+body:has(#ad-close-trigger:checked) {
+    margin-bottom: 0 !important;
+}
+
+/* 6 */
+.overlay-ad-container { 
+    display: flex; justify-content: center; align-items: center; 
+    min-height: 50px; position: relative; 
+}
+.overlay-ad-container::before { 
+    content: ""; position: absolute; width: 320px; height: 100%; 
+    border-radius: 4px; z-index: 0;
+    animation: quietPulse 3s infinite; 
+}
+@keyframes quietPulse { 0%, 100% { background-color: transparent; } 50% { background-color: rgba(0, 0, 0, 0.04); } }
+
+#div-gpt-ad-1563441919648-0 { position: relative; z-index: 1; display: flex; justify-content: center; width: 100%; }
+#div-gpt-ad-1563441919648-0 iframe {
+    animation: fadeInQuick 0.5s ease-in-out 0.2s both !important;
+    background: var(--h2-background-color, #ffffff);
+}
+@keyframes fadeInQuick { from { opacity: 0; } to { opacity: 1; } }
+</style>
+
+<input type="checkbox" id="ad-close-trigger">
+<div id="overlay-anchor-wrapper" class="hidden-switch-class">
+    <label for="ad-close-trigger" id="pc-overlay-ad-close-button">
+        <svg viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+    </label>
+<div id="pc-overlay-ad-parent-container" class="hidden-switch-class">
+    <div id="pc-overlay-ad-container-hidden" class="overlay-ad-container">
+        <div id="pc-overlay-ad-container">
+            <div id='div-gpt-ad-1563441919648-0' class="overlay-ad-wrapper"></div>
+        </div>
+    </div>
+</div>
+</div>
+<noscript>
+    <div class="noscript-alert">
+        <i class="fa-solid fa-exclamation-triangle"></i>
+        ブラウザの JavaScript がオフ（ブロックまたは許可しない）に設定されているため、このページは正常に機能しません。
+    </div>
+</noscript>
+<div class="container-wrapper">
+
+    <div class="container clearfix">
+                    <div id="header" class="default-header">
+                <a href="/shinycolors/" title="シャニマス攻略 Wiki*">
+                    <span class="title2">シャニマス攻略 Wiki*</span>
+                </a>
+            </div>
+                <div class="toolbox-container system-ui clearfix" id="naviframe">
+            <div class="toolbox toolbox-desktop navibar-container">
+                <div id="navigator">[ <a href="/shinycolors/">ホーム</a> | <a href="/shinycolors/::cmd/newpage?refer=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" rel="nofollow">新規</a> | <a href="/shinycolors/::cmd/edit?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" rel="nofollow">編集</a> | <a href="/shinycolors/::cmd/attach?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" rel="nofollow">添付</a> ]</div>            </div>
+            <div class="toolbox toolbox-desktop toolbar-container">
+                <div class="toolbar"><a href="/shinycolors/::cmd/list" title="一覧" rel="nofollow"><span class="system-icon toolbar list"></span></a>
+<a href="/shinycolors/RecentChanges" title="最終更新" rel="nofollow"><span class="system-icon toolbar recent"></span></a>
+<a href="/shinycolors/::cmd/diff?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="差分" rel="nofollow"><span class="system-icon toolbar diff"></span></a>
+<a href="/shinycolors/::cmd/backup?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="バックアップ" rel="nofollow"><span class="system-icon toolbar backup"></span></a>
+<a href="/shinycolors/::cmd/freeze?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="凍結" rel="nofollow"><span class="system-icon toolbar freeze"></span></a>
+<a href="/shinycolors/::cmd/template?refer=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="複製" rel="nofollow"><span class="system-icon toolbar copy"></span></a>
+<a href="/shinycolors/::cmd/rename?refer=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="名前変更" rel="nofollow"><span class="system-icon toolbar rename"></span></a>
+<a href="/shinycolors/::cmd/help" title="ヘルプ" rel="nofollow"><span class="system-icon toolbar help"></span></a></div>            </div>
+            <div class="toolbox toolbox-mobile toolbar-container">
+                <div class="toolbar"><a href="/shinycolors/" title="ホーム"><span class="system-icon toolbar top"></span></a>
+<a href="/shinycolors/RecentChanges" title="最終更新" rel="nofollow"><span class="system-icon toolbar recent"></span></a>
+<a id="menu-in-nav" href="#menubar" class="menu-in-nav">Menu<i class="fa-solid fa-arrow-alt-down"></i></a></div>            </div>
+            <div class="toolbox toolbox-searchbar">
+                <form action="/shinycolors/::cmd/search" method="get">
+                    <input type="search"  name="word" value="" size="16" placeholder="サイト内検索">
+                    <input type="hidden" name="type" value="AND">
+                    <input type="submit" value="検索">
+                </form>
+            </div>
+        </div>
+            <div id="responsive-navigation"></div>
+    <div style="display: none;">
+        <div id="edit-menu" class="system-ui">
+            <div id="edit-menu-items">
+                <ul><li><a href="/shinycolors/::cmd/newpage?refer=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" rel="nofollow"><span class='system-icon toolbar new'></span> 新規</a></li><li><a href="/shinycolors/::cmd/edit?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" rel="nofollow"><span class='system-icon toolbar edit'></span> 編集</a></li><li><a href="/shinycolors/::cmd/attach?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" rel="nofollow"><span class='system-icon toolbar upload'></span> 添付</a></li></ul>
+<ul><li><a href="/shinycolors/::cmd/list" rel="nofollow"><span class='system-icon toolbar list'></span> 一覧</a></li><li><a href="/shinycolors/RecentChanges" rel="nofollow"><span class='system-icon toolbar recent'></span> 最終更新</a></li><li><a href="/shinycolors/::cmd/diff?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" rel="nofollow"><span class='system-icon toolbar diff'></span> 差分</a></li><li><a href="/shinycolors/::cmd/backup?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" rel="nofollow"><span class='system-icon toolbar backup'></span> バックアップ</a></li></ul>
+<ul><li><a href="/shinycolors/::cmd/freeze?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" rel="nofollow"><span class='system-icon toolbar freeze'></span> 凍結</a></li><li><a href="/shinycolors/::cmd/template?refer=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" rel="nofollow"><span class='system-icon toolbar copy'></span> 複製</a></li><li><a href="/shinycolors/::cmd/rename?refer=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" rel="nofollow"><span class='system-icon toolbar rename'></span> 名前変更</a></li></ul>
+<ul><li><a href="/shinycolors/::cmd/help" rel="nofollow"><span class='system-icon toolbar help'></span> ヘルプ</a></li></ul>
+
+            </div>
+        </div>
+    </div>    </div>
+
+    <div class="container">
+        <div class="clearfix">
+            <div id="breadcrumbs" class="system-ui">
+                <div id="topicpath"><a href="/shinycolors/" title="FrontPage"><i class="fa-solid fa-home" style="margin-left: 6px; display: inline-block; min-width: 1.2em;"></i></a> &gt; 杜野凛世</div>            </div>
+            <div id="system-icon-container" class="system-ui">
+                                <span id="share-button-root"></span>                <span id="admin-contact-root" class="single-system-icon"></span>
+                <div id="load-panel-root"></div>
+                <span id="admin-login" class="single-system-icon">
+                    
+<a class="admin-login-status" href="/shinycolors/::cmd/admin_login?return_to=%2Fshinycolors%2F%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="未ログイン">
+    <i class="fa-solid fa-cog"></i>
+</a>
+                </span>
+            </div>
+        </div>
+        <hr />
+    </div>
+
+    <div id="contents" class="columns-container three-columns-container container clearfix has-left-column">
+
+        <div class="column-center clearfix">
+            <div id="body">
+                                                <div id="title">
+                                            <h1 class="title">杜野凛世</h1>
+                                                                <div id="lastmodified">
+                            Last-modified: 2026-06-20 (土) 12:16:18                                                    </div>
+                                    </div>
+
+                
+<div id="inbound-ad-container">
+  <!-- /19033742/WIKIWIKI_PC_INBOUND -->
+  <div id='div-gpt-ad-1567409776345-0'></div>
+  <!-- /19033742/WIKIWIKI_PC_INBOUND_RIGHT -->
+  <div id='div-gpt-ad-1658802281376-0'></div>
+  <!-- /19033742/WIKIWIKI_SP_INBOUND -->
+  <div id='div-gpt-ad-1563430750445-0' class="hidden-switch-class"></div>
+</div>
+
+<style>
+.pc-inbound-ad-default {
+    margin-top:40px;
+    margin-bottom:40px;
+    display:flex;
+    justify-content:flex-start;
+    gap: 10px 5px;
+    min-height:280px;
+}
+.pc-inbound-ad-center{
+    margin-top:40px;
+    margin-bottom:40px;
+    display:flex;
+    justify-content:center;
+    gap: 10px 5px;
+    min-height:280px;
+    position: relative;
+}
+.pc-inbound-ad-mobile{
+    margin-top:20px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:center;
+    min-height:280px;
+}
+.pc-inbound-ad-close-button {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"%3E%3C!--! Font Awesome Pro 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc. --%3E%3Cpath class="fa-secondary" opacity=".4" d="M281.4 390.6L304 413.3 349.3 368l-22.6-22.6L237.3 256l89.4-89.4L349.3 144 304 98.7l-22.6 22.6L192 210.7l-89.4-89.4L80 98.7 34.7 144l22.6 22.6L146.7 256 57.4 345.4 34.7 368 80 413.3l22.6-22.6L192 301.3l89.4 89.4z" fill="%23888"/%3E%3C/svg%3E') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+</style>
+
+<script>
+(function () {
+    const co = document.getElementById('inbound-ad-container');
+    const inboundPaths = [
+        '/19033742/WIKIWIKI_PC_INBOUND',
+        '/19033742/WIKIWIKI_PC_INBOUND_RIGHT'
+    ];
+
+    if (wi_isinbound && wi_group === "N" && wi_agreement === "false") {
+        if (wi_ismobile) {
+            co.classList.add("pc-inbound-ad-mobile","default-advertisement");
+        } else {
+            const width = co.clientWidth;
+            const adClass = width < 683 || (width >= 683 && width < 900) ? ["pc-inbound-ad-center","default-advertisement"] : ["pc-inbound-ad-default"];
+            co.classList.add(...adClass);
+
+            if (adClass.includes("pc-inbound-ad-center")) {
+                googletag.cmd.push(function() {
+                    googletag.pubads().addEventListener('slotOnload', function(event) {
+                        if (inboundPaths.includes(event.slot.getAdUnitPath())) {
+                            let closeButton = co.querySelector(".pc-inbound-ad-close-button");
+                            if (!closeButton) {
+                                closeButton = document.createElement("div");
+                                closeButton.classList.add("pc-inbound-ad-close-button");
+                                closeButton.onclick = () => co.style.display = "none";
+                                co.appendChild(closeButton);
+                            }
+                        }
+                    });
+                });
+            }
+        }
+    }
+})();
+</script>
+
+                <div class="search-words small" style="display: none;">
+    <div class="small">これらのキーワードがハイライトされています：<ul class="search-words-words"></ul></div>
+    <hr class="full_hr">
+</div>
+                <div id="content">
+                                        <p><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/icon_rinze.jpg.webp?rev=c5939834dedc66e1f16bdedc3e3ea6bf&amp;t=20181225185845" alt="杜野凛世" title="杜野凛世" width="320" height="320"  loading="lazy"></p>
+<div class="spacer">&nbsp;</div>
+<p><span style="font-size:14px"><strong>「凛世は、一生…… プロデューサーさまについて参ります」</strong></span></p>
+<div class="spacer">&nbsp;</div>
+<div class="accordion-container ">
+    <h2 class="accordion-header">
+        <i class="fa-solid fa-plus-square hidden-on-open"></i>
+        <i class="fa-solid fa-minus-square visible-on-open"></i>
+        プロフィール
+    </h2>
+    <div class="accordion-content"><p>落ち着いた佇まいの大和撫子。常に礼儀正しく、一歩引いて相手を立てる性格。少女漫画好きという意外な趣味を持つ。高校1年生。</p>
+<div class="h-scrollable"><table><tbody><tr><th style="width:70px;">なまえ</th><td colspan="3" style="text-align:center;">もりの　りんぜ</td></tr><tr><th style="width:70px;">ユニット</th><td colspan="3" style="text-align:center;">放課後クライマックスガールズ</td></tr><tr><th style="width:70px;">年齢</th><td style="text-align:center; width:80px;">16歳</td><th style="width:70px;">血液型</th><td style="text-align:center; width:80px;">B型</td></tr><tr><th style="width:70px;">誕生日</th><td style="text-align:center; width:80px;">10/19</td><th style="width:70px;">星座</th><td style="text-align:center; width:80px;">天秤座</td></tr><tr><th style="width:70px;">身長</th><td style="text-align:center; width:80px;">155㎝</td><th style="width:70px;">体重</th><td style="text-align:center; width:80px;">44㎏</td></tr><tr><th style="width:70px;">スリーサイズ</th><td style="text-align:center; width:80px;">70/54/78</td><th style="width:70px;">利き手</th><td style="text-align:center; width:80px;">左</td></tr><tr><th style="width:70px;">出身地</th><td colspan="3" style="text-align:center;">鳥取県</td></tr><tr><th style="width:70px;">趣味</th><td colspan="3" style="text-align:center;">少女漫画、芸道全般</td></tr><tr><th style="width:70px;">特技</th><td colspan="3" style="text-align:center;">折り紙、百人一首</td></tr><tr><th style="width:70px;">CV</th><td colspan="3" style="text-align:center;">丸岡 和佳奈</td></tr><tr><th rowspan="2" style="width:70px;">PV</th><td colspan="3" style="text-align:center;"><a class="ext" href="https://wikiwiki.jp/p/cushion?to=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DE4c3l79fdV8"  rel="nofollow">個人PV<span class="system-icon ext pukiwiki-open-uri" data-href="https://www.youtube.com/watch?v=E4c3l79fdV8" data-frame="_blank"></span></a></td></tr><tr><td colspan="3" style="text-align:center;"><a class="ext" href="https://wikiwiki.jp/p/cushion?to=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DLxcsFNwQ8qE"  rel="nofollow">ユニットPV<span class="system-icon ext pukiwiki-open-uri" data-href="https://www.youtube.com/watch?v=LxcsFNwQ8qE" data-frame="_blank"></span></a></td></tr></tbody></table></div>
+<div class="spacer">&nbsp;</div>
+</div>
+</div>
+<div class="accordion-container ">
+    <h2 class="accordion-header">
+        <i class="fa-solid fa-plus-square hidden-on-open"></i>
+        <i class="fa-solid fa-minus-square visible-on-open"></i>
+        誕生日お祝いボイステキスト
+    </h2>
+    <div class="accordion-content"><div class="h-scrollable"><table><tbody><tr><th style="text-align:center; width:150px;">相手</th><th style="text-align:center; width:300px;">内容</th></tr><tr><td style="text-align:center; width:150px;"><a href="/shinycolors/%E5%B0%8F%E5%AE%AE%E6%9E%9C%E7%A9%82" title="小宮果穂" class="rel-wiki-page">小宮果穂</a></td><td style="text-align:center; width:300px;">撮って……おきたくて……<br class="spacer">果穂さんの……<br class="spacer">お誕生日でございます……</td></tr><tr><td style="text-align:center; width:150px;"><a href="/shinycolors/%E5%9C%92%E7%94%B0%E6%99%BA%E4%BB%A3%E5%AD%90" title="園田智代子" class="rel-wiki-page">園田智代子</a></td><td style="text-align:center; width:300px;">ペンを……贈りたく……<br class="spacer">智代子さんの……<br class="spacer">お誕生日でございます……</td></tr><tr><td style="text-align:center; width:150px;"><a href="/shinycolors/%E8%A5%BF%E5%9F%8E%E6%A8%B9%E9%87%8C" title="西城樹里" class="rel-wiki-page">西城樹里</a></td><td style="text-align:center; width:300px;">後ほど……食堂にて……<br class="spacer">樹里さんの……<br class="spacer">お誕生日会でございます……</td></tr><tr><td style="text-align:center; width:150px;"><a href="/shinycolors/%E6%9C%89%E6%A0%96%E5%B7%9D%E5%A4%8F%E8%91%89" title="有栖川夏葉" class="rel-wiki-page">有栖川夏葉</a></td><td style="text-align:center; width:300px;">パンに……口づけを……<br class="spacer">夏葉さんの……<br class="spacer">お誕生日でございます……</td></tr></tbody></table></div>
+<div class="spacer">&nbsp;</div>
+</div>
+</div>
+<div class="accordion-container ">
+    <h2 class="accordion-header">
+        <i class="fa-solid fa-plus-square hidden-on-open"></i>
+        <i class="fa-solid fa-minus-square visible-on-open"></i>
+        誕生日コメント
+    </h2>
+    <div class="accordion-content"><p><a class="ext" href="https://wikiwiki.jp/p/cushion?to=https%3A%2F%2Ftwitter.com%2Fimassc_official"  rel="nofollow">シャニマス公式ツイッター<span class="system-icon ext pukiwiki-open-uri" data-href="https://twitter.com/imassc_official" data-frame="_blank"></span></a>では、誕生日にアイドル本人からのコメントが紹介されている。</p>
+<div class="h-scrollable"><table><tbody><tr><td style="text-align:center; width:400px;"><a class="ext" href="https://wikiwiki.jp/p/cushion?to=https%3A%2F%2Ftwitter.com%2Fimassc_official%2Fstatus%2F1052937597087973376"  rel="nofollow">2018年コメント<span class="system-icon ext pukiwiki-open-uri" data-href="https://twitter.com/imassc_official/status/1052937597087973376" data-frame="_blank"></span></a></td><td style="text-align:center; width:1500px;">人が紡いだ……気の遠くなるような時の中…… 貴方さまと同じ世に……生を得て…… 凛世は……幸せでございます…… プロデューサーさま……</td></tr><tr><td style="text-align:center; width:400px;"><a class="ext" href="https://wikiwiki.jp/p/cushion?to=https%3A%2F%2Ftwitter.com%2Fimassc_official%2Fstatus%2F1185209167499485184"  rel="nofollow">2019年コメント<span class="system-icon ext pukiwiki-open-uri" data-href="https://twitter.com/imassc_official/status/1185209167499485184" data-frame="_blank"></span></a></td><td style="text-align:center; width:1500px;">空が高いことを……雲が笑うことを…… ともに眺められる今日を…… 祝いたいのです……プロデューサーさま……</td></tr><tr><td style="text-align:center; width:400px;"><a class="ext" href="https://wikiwiki.jp/p/cushion?to=https%3A%2F%2Ftwitter.com%2Fimassc_official%2Fstatus%2F1317843126434910209"  rel="nofollow">2020年コメント<span class="system-icon ext pukiwiki-open-uri" data-href="https://twitter.com/imassc_official/status/1317843126434910209" data-frame="_blank"></span></a></td><td style="text-align:center; width:1500px;">貴方さまに出会えた…… ここまでが……一歳…… 今日この日より……ふたつめを数えましょう……</td></tr><tr><td style="text-align:center; width:400px;"><a class="ext" href="https://wikiwiki.jp/p/cushion?to=https%3A%2F%2Ftwitter.com%2Fimassc_official%2Fstatus%2F1450114697487794182"  rel="nofollow">2021年コメント<span class="system-icon ext pukiwiki-open-uri" data-href="https://twitter.com/imassc_official/status/1450114697487794182" data-frame="_blank"></span></a></td><td style="text-align:center; width:1500px;">耳をおさえて……まいりました……<br class="spacer">そのお言葉を……<br class="spacer">起きて最初に……聞きたくて……</td></tr><tr><td style="text-align:center; width:400px;"><a class="ext" href="https://wikiwiki.jp/p/cushion?to=https%3A%2F%2Ftwitter.com%2Fimassc_official%2Fstatus%2F1582386268700295168"  rel="nofollow">2022年コメント<span class="system-icon ext pukiwiki-open-uri" data-href="https://twitter.com/imassc_official/status/1582386268700295168" data-frame="_blank"></span></a></td><td style="text-align:center; width:1500px;">そ……そのように……見つめられては…… <br class="spacer">──────紅を……ひいてまりました……<br class="spacer">幾度もは……ない日ゆえ……</td></tr></tbody></table></div>
+<div class="spacer">&nbsp;</div>
+</div>
+</div>
+<div class="accordion-container ">
+    <h2 class="accordion-header">
+        <i class="fa-solid fa-plus-square hidden-on-open"></i>
+        <i class="fa-solid fa-minus-square visible-on-open"></i>
+        カード一覧表
+    </h2>
+    <div class="accordion-content"><p>項目行をクリック(タップ)で並び替え、Shift+クリックで複数項目の並び替え可能<br />
+カード名をクリック(タップ)で詳細</p>
+<div class="wikiwiki-tablesorter-wrapper">
+    <div class="h-scrollable"><table><thead><tr><th>種類</th><th>レア度</th><th>カード名</th><th>入手</th><th>追加日</th></tr></thead><tbody><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">03</span>P</td><td style="text-align:right;">R</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E7%99%BD%E3%81%84%E3%83%84%E3%83%90%E3%82%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【白いツバサ】杜野凛世" class="rel-wiki-page">白いツバサ</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2018 04/24</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">13</span>S</td><td style="text-align:right;">R</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90283%E3%83%97%E3%83%AD%E3%81%AE%E3%83%92%E3%83%8A%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【283プロのヒナ】杜野凛世" class="rel-wiki-page">283プロのヒナ</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2018 04/24</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">02</span>P</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E6%83%B3%E3%81%B2%E3%81%84%E3%82%8D%E3%81%AF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【想ひいろは】杜野凛世" class="rel-wiki-page">想ひいろは</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2018 04/24</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">02</span>P</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E5%87%9B%E5%87%9B%E3%80%81%E5%87%9B%E4%B8%96%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【凛凛、凛世】杜野凛世" class="rel-wiki-page">凛凛、凛世</a></td><td style="text-align:center; width:95px;">招待</td><td style="text-align:center; width:95px;">2018 04/24</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%81%B5%E3%82%8C%E3%82%93%E3%81%A9%E6%97%A5%E5%92%8C%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ふれんど日和】杜野凛世" class="rel-wiki-page">ふれんど日和</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2018 04/24</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E7%99%BE%E8%89%B2%E3%81%B5%E3%81%89%E3%81%A8%E3%81%90%E3%82%89%E3%81%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【百色ふぉとぐらふ】杜野凛世" class="rel-wiki-page">百色ふぉとぐらふ</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2018 05/31</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">02</span>P</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E5%BE%AE%E7%86%B1%E9%A2%A8%E9%88%B4%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【微熱風鈴】杜野凛世" class="rel-wiki-page">微熱風鈴</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2018 07/11</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96%E3%81%AE%E5%8D%B0%E8%B1%A1%E6%B4%BE%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【杜野凛世の印象派】杜野凛世" class="rel-wiki-page">杜野凛世の印象派</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2018 10/19</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">02</span>P</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%81%B5%E3%82%89%E3%81%93%E3%81%93%E3%81%AE%E3%81%86%E3%81%9F%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ふらここのうた】杜野凛世" class="rel-wiki-page">ふらここのうた</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2018 11/30</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E5%87%9B%E4%B8%96%E5%A4%95%E7%94%BA%E7%89%A9%E8%AA%9E%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【凛世夕町物語】杜野凛世" class="rel-wiki-page">凛世夕町物語</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2019 02/18</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E5%87%9B%E4%B8%96%E8%8A%B1%E4%BC%9D%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【凛世花伝】杜野凛世" class="rel-wiki-page">凛世花伝</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2019 03/22</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E5%A4%A7%E5%AD%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【をとめ大学】杜野凛世" class="rel-wiki-page">をとめ大学</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2019 05/20</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E5%B8%B8%E5%A4%8FCLIMAX%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【常夏CLIMAX】杜野凛世" class="rel-wiki-page">常夏CLIMAX</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2019 07/31</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E6%B0%B4%E8%89%B2%E6%84%9F%E6%83%85%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【水色感情】杜野凛世" class="rel-wiki-page">水色感情</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2019 09/20</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E5%8D%81%E4%BA%8C%E6%9C%88%E7%9F%AD%E7%AF%87%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【十二月短篇】杜野凛世" class="rel-wiki-page">十二月短篇</a></td><td style="text-align:center; width:95px;">期間限定ガシャ</td><td style="text-align:center; width:95px;">2019 12/13</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E8%BE%9E%E5%85%B8%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【をとめ辞典】杜野凛世" class="rel-wiki-page">をとめ辞典</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2020 02/12</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E5%A4%9C%E6%98%8E%E3%81%91%E3%81%AE%E6%99%A9%E3%81%AB%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【夜明けの晩に】杜野凛世" class="rel-wiki-page">夜明けの晩に</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2020 04/10</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E7%99%BD%E3%81%84%E3%83%84%E3%83%90%E3%82%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【白いツバサ】杜野凛世" class="rel-wiki-page">アイドルロード</a></td><td style="text-align:center; width:95px;">アイドルロード</td><td style="text-align:center; width:95px;">2020 04/13</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">02</span>P</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E7%99%BD%E3%81%84%E3%83%84%E3%83%90%E3%82%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【白いツバサ】杜野凛世" class="rel-wiki-page">白いツバサ</a></td><td style="text-align:center; width:95px;">アイドルロード</td><td style="text-align:center; width:95px;">2020 04/13</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%82%8F%E3%82%8C%E3%81%AB%E3%81%8B%E3%81%B8%E3%82%8C%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【われにかへれ】杜野凛世" class="rel-wiki-page">われにかへれ</a></td><td style="text-align:center; width:95px;">期間限定ガシャ</td><td style="text-align:center; width:95px;">2020 08/11</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E6%97%A5%E3%82%92%E9%A3%9F%E3%82%93%E3%81%A7%E3%80%81%E5%A4%9C%E3%82%92%E5%95%9C%E3%81%A3%E3%81%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【日を食んで、夜を啜って】杜野凛世" class="rel-wiki-page">日を食んで、夜を啜って</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2020 12/11</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E7%A5%9D%E5%94%84-hogiuta-%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【祝唄-hogiuta-】杜野凛世" class="rel-wiki-page">祝唄-hogiuta-</a></td><td style="text-align:center; width:95px;">期間限定ガシャ</td><td style="text-align:center; width:95px;">2021 01/01</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%83%AD%E3%83%BC%E3%83%BB%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ロー・ポジション】杜野凛世" class="rel-wiki-page">ロー・ポジション</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2021 03/22</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">02</span>P</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E9%9A%8E%E6%AE%B5%E5%BC%8F%E7%B4%94%E6%83%85%E6%98%87%E9%99%8D%E6%A9%9F%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【階段式純情昇降機】杜野凛世" class="rel-wiki-page">階段式純情昇降機</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2021 05/20</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E6%9D%A1%E7%B4%84%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【をとめ条約】杜野凛世" class="rel-wiki-page">をとめ条約</a></td><td style="text-align:center; width:95px;">グレードフェス</td><td style="text-align:center; width:95px;">2021 09/30</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E7%89%9B%E7%9A%84%E6%83%85%E6%84%9F%E7%9B%9B%E3%82%8A%E3%80%81%E4%B8%80%E4%B8%81%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【牛的情感盛り、一丁】杜野凛世" class="rel-wiki-page">牛的情感盛り、一丁</a></td><td style="text-align:center; width:95px;">期間限定ガシャ</td><td style="text-align:center; width:95px;">2021 10/21</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%81%94%E3%81%A4%E3%81%93%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【さよならごつこ】杜野凛世" class="rel-wiki-page">さよならごつこ</a></td><td style="text-align:center; width:95px;">期間限定ガシャ</td><td style="text-align:center; width:95px;">2022 01/01</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">02</span>P</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E6%98%A5%E5%91%8A%E7%AA%93%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【春告窓】杜野凛世" class="rel-wiki-page">春告窓</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2022 03/19</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90SETSUNA%20BEAT%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【SETSUNA BEAT】杜野凛世" class="rel-wiki-page">SETSUNA BEAT</a></td><td style="text-align:center; width:95px;">ガシャ特典</td><td style="text-align:center; width:95px;">2022 08/13</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E7%8F%88%E7%90%B2%E3%81%AE%E7%89%9B%E4%B9%B3%E3%81%84%E3%82%8C%E3%81%9F%E3%82%93%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【珈琲の牛乳いれたん】杜野凛世" class="rel-wiki-page">珈琲の牛乳いれたん</a></td><td style="text-align:center; width:95px;">期間限定ガシャ</td><td style="text-align:center; width:95px;">2022 08/31</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E5%88%A5%E5%86%8A%E3%82%92%E3%81%A8%E3%82%81%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【別冊をとめ】杜野凛世" class="rel-wiki-page">別冊をとめ</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2022 10/20</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E6%99%A9%E7%A7%8B%E3%82%8D%E3%81%BE%E3%82%93%E3%81%99%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【晩秋ろまんす】杜野凛世" class="rel-wiki-page">晩秋ろまんす</a></td><td style="text-align:center; width:95px;">期間限定ガシャ</td><td style="text-align:center; width:95px;">2022 10/31</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E8%8A%B1%E3%81%AF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【花は】杜野凛世" class="rel-wiki-page">花は</a></td><td style="text-align:center; width:95px;">トワコレガシャ</td><td style="text-align:center; width:95px;">2023 04/21</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E5%A4%8F%E5%BD%A9%E3%83%95%E3%83%AC%E3%82%A2%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【夏彩フレア】杜野凛世" class="rel-wiki-page">夏彩フレア</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2023 07/20</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E7%AB%9C%E6%83%B3%E8%AD%9A%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【竜想譚】杜野凛世" class="rel-wiki-page">竜想譚</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2023 10/10</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E6%9F%93%E5%85%89%E6%BA%80%E6%9C%88%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【染光満月】杜野凛世" class="rel-wiki-page">染光満月</a></td><td style="text-align:center; width:95px;">マイコレガシャ</td><td style="text-align:center; width:95px;">2023 12/03</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E4%B8%80%E4%BA%BA%E5%88%86%E3%81%AE%E7%A9%BA%E3%80%81%E4%B8%80%E6%9E%9A%E3%81%AE%E7%BE%BD%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【一人分の空、一枚の羽】杜野凛世" class="rel-wiki-page">一人分の空、一枚の羽</a></td><td style="text-align:center; width:95px;">劇場特典<a id="notetext_1"  class="note_super tooltip"
+            data-tooltip-content="&lt;p&gt;シャニアニ第3章 劇場先行上映記念 特典&lt;/p&gt;&lt;div style=&quot;text-align: right;&quot;&gt;&lt;a href=&quot;#notefoot_1&quot;&gt;脚注 *1 へ&lt;/a&gt;&lt;/div&gt;">*1</a></td><td style="text-align:center; width:95px;">2024 01/05</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E8%B6%85%E7%B4%94%E6%83%85%E5%92%8C%E8%8F%93%E5%AD%90%E5%B0%82%E7%A7%91%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【超純情和菓子専科】杜野凛世" class="rel-wiki-page">超純情和菓子専科</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2024 03/11</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E7%A1%9D%E5%AD%90%E5%B0%91%E5%A5%B3%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【硝子少女】杜野凛世" class="rel-wiki-page">硝子少女</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2024 05/09</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E4%BB%8A%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6%E3%82%92%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【今のすべてを】杜野凛世" class="rel-wiki-page">今のすべてを</a></td><td style="text-align:center; width:95px;">キャンペーン<a id="notetext_2"  class="note_super tooltip"
+            data-tooltip-content="&lt;p&gt;2024/05/11～2024/05/17 アニメ第6話振り返りログインボーナス 期間中1日1枚、最大5枚配布&lt;/p&gt;&lt;div style=&quot;text-align: right;&quot;&gt;&lt;a href=&quot;#notefoot_2&quot;&gt;脚注 *2 へ&lt;/a&gt;&lt;/div&gt;">*2</a></td><td style="text-align:center; width:95px;">2024 05/11</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E7%99%BD%E6%9C%A8%E6%A7%BF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【白木槿】杜野凛世" class="rel-wiki-page">白木槿</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2024 06/07</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%81%AA%E3%81%A4%E3%81%8A%E3%82%82%E3%81%B2%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【なつおもひ】杜野凛世" class="rel-wiki-page">なつおもひ</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2024 07/18</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E4%BA%A4%E9%9B%91%E3%81%99%E3%82%8B%E5%BF%83%E3%80%81%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【交雑する心、合わせて】杜野凛世" class="rel-wiki-page">交雑する心、合わせて</a></td><td style="text-align:center; width:95px;">ガシャ特典<a id="notetext_3"  class="note_super tooltip"
+            data-tooltip-content="&lt;p&gt;2024/10/19～2024/10/25 有償限定 アニメ放送記念！SSR2倍！アニメ登場ユニット限定ステップアップガシャ&lt;/p&gt;&lt;div style=&quot;text-align: right;&quot;&gt;&lt;a href=&quot;#notefoot_3&quot;&gt;脚注 *3 へ&lt;/a&gt;&lt;/div&gt;">*3</a></td><td style="text-align:center; width:95px;">2024 10/19</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E4%B8%89%E6%81%8B%E7%AC%A6%E3%81%AE%E3%82%BD%E3%83%8A%E3%82%BF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【三恋符のソナタ】杜野凛世" class="rel-wiki-page">三恋符のソナタ</a></td><td style="text-align:center; width:95px;">期間限定ガシャ</td><td style="text-align:center; width:95px;">2024 10/31</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%83%A9%E3%83%B4%E3%83%BB%E3%83%AC%E3%82%BF%E3%83%BC%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ラヴ・レター】杜野凛世" class="rel-wiki-page">ラヴ・レター</a></td><td style="text-align:center; width:95px;">パラコレガシャ</td><td style="text-align:center; width:95px;">2024 11/29</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">01</span>P</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E7%89%87%E6%81%8B%E3%81%AF%E3%81%82%E3%81%A8%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【片恋はあと】杜野凛世" class="rel-wiki-page">片恋はあと</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2025 02/07</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%83%AF%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%EF%BD%9E%E3%83%87%E3%83%BC%E3%83%88%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ワーキングスナップ～デート】杜野凛世" class="rel-wiki-page">ワーキングスナップ～デート</a></td><td style="text-align:center; width:95px;">期間限定ガシャ</td><td style="text-align:center; width:95px;">2025 02/14</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90Over%20the%20prism%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【Over the prism】杜野凛世" class="rel-wiki-page">Over the prism</a></td><td style="text-align:center; width:95px;">ガシャ特典</td><td style="text-align:center; width:95px;">2025 03/01</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%2725P%E3%82%AB%E3%83%83%E3%83%97%E3%83%A9%E3%83%B3%E3%82%AF%E3%82%A4%E3%83%B3%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【&#039;25Pカップランクイン】杜野凛世" class="rel-wiki-page">'25Pカップランクイン</a></td><td style="text-align:center; width:95px;">Pカップ</td><td style="text-align:center; width:95px;">2025 04/15</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%2725P%E3%82%AB%E3%83%83%E3%83%97%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【&#039;25Pカップ】杜野凛世" class="rel-wiki-page">'25Pカップ</a></td><td style="text-align:center; width:95px;">Pカップ</td><td style="text-align:center; width:95px;">2025 04/15</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">12</span>S</td><td style="text-align:right;">SR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E8%8C%B6%E4%BC%9A%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【をとめ茶会】杜野凛世" class="rel-wiki-page">をとめ茶会</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2025 09/29</td></tr><tr><td style="background-color:pink; text-align:right;"><span class="wikicolor" style="color:pink">00</span>P</td><td style="text-align:right;">UR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E7%B5%B5%E7%A9%BA%E9%9D%B4%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【絵空靴】杜野凛世" class="rel-wiki-page">絵空靴</a></td><td style="text-align:center; width:95px;">プラチナガシャ</td><td style="text-align:center; width:95px;">2025 10/08</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E3%82%86%E3%82%81%E3%81%AE%E3%81%94%E3%81%A8%E3%81%97%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ゆめのごとし】杜野凛世" class="rel-wiki-page">ゆめのごとし</a></td><td style="text-align:center; width:95px;">期間限定ガシャ</td><td style="text-align:center; width:95px;">2025 10/19</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E9%81%A0%E3%81%8D%E5%BE%A1%E7%A9%BA%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【遠き御空】杜野凛世" class="rel-wiki-page">遠き御空</a></td><td style="text-align:center; width:95px;">プレコレガシャ</td><td style="text-align:center; width:95px;">2026 03/18</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E6%B5%81%E7%A0%82%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【流砂の果てに】杜野凛世" class="rel-wiki-page">流砂の果てに</a></td><td style="text-align:center; width:95px;">イベント</td><td style="text-align:center; width:95px;">2026 04/02</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E5%B9%B8%E3%81%82%E3%82%8C%E3%81%A8%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【幸あれと】杜野凛世" class="rel-wiki-page">幸あれと</a></td><td style="text-align:center; width:95px;">トワコレガシャ</td><td style="text-align:center; width:95px;">2026 06/18</td></tr><tr><td style="background-color:cyan; text-align:right;"><span class="wikicolor" style="color:cyan">11</span>S</td><td style="text-align:right;">SSR</td><td style="text-align:center; width:180px;"><a href="/shinycolors/%E3%80%90%E6%AD%A9%E5%B9%85%E3%82%92%E3%81%9D%E3%82%8D%E3%81%88%E3%81%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【歩幅をそろえて】杜野凛世" class="rel-wiki-page">歩幅をそろえて</a></td><td style="text-align:center; width:95px;">期間限定ガシャ</td><td style="text-align:center; width:95px;">2026 06/20</td></tr></tbody></table></div>
+
+</div>
+<div class="spacer">&nbsp;</div>
+</div>
+</div>
+<div class="accordion-container accordion-open">
+    <h2 class="accordion-header">
+        <i class="fa-solid fa-plus-square hidden-on-open"></i>
+        <i class="fa-solid fa-minus-square visible-on-open"></i>
+        カードイラスト一覧
+    </h2>
+    <div class="accordion-content"><div class="flex-container" style="">
+    <div class="flex-box" style="flex-basis: 50%;">
+    <div class="flex-box-inner">
+        <div style="text-align:center"><strong>プロデュース</strong></div>
+<hr class="full_hr" />
+<div class="flex-container" style="justify-content: center;">
+    <div class="flex-box" style="flex-basis: 170px;">
+    <div class="flex-box-inner">
+        <div style="font-size:11px">
+<p><strong><em>UR</em></strong><br />
+<a href="#pUR1">絵空靴</a></p>
+<p><strong><em>SSR</em></strong><br />
+<a href="#pSSR1">杜野凛世の印象派</a><br />
+<a href="#pSSR1">凛世花伝</a><br />
+<a href="#pSSR2">水色感情</a><br />
+<a href="#pSSR2">十二月短篇</a><br />
+<a href="#pSSR3">アイドルロード</a><br />
+<a href="#pSSR3">われにかへれ</a><br />
+<a href="#pSSR4">ロー・ポジション</a><br />
+<a href="#pSSR4">さよならごつこ</a><br />
+<a href="#pSSR5">晩秋ろまんす</a><br />
+<a href="#pSSR5">花は</a><br />
+<a href="#pSSR6">染光満月</a><br />
+<a href="#pSSR6">硝子少女</a><br />
+<a href="#pSSR7">ラヴ・レター</a><br />
+<a href="#pSSR7">片恋はあと</a></p>
+
+</div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 170px;">
+    <div class="flex-box-inner">
+        <div style="font-size:11px">
+<p><strong><em>SR</em></strong><br />
+<a href="#pSR1">想ひいろは</a><br />
+<a href="#pSR1">凛凛、凛世</a><br />
+<a href="#pSR2">微熱風鈴</a><br />
+<a href="#pSR2">ふらここのうた</a><br />
+<a href="#pSR3">白いツバサ</a><br />
+<a href="#pSR3">階段式純情昇降機</a><br />
+<a href="#pSR4">春告窓</a></p>
+<p><strong><em>R</em></strong><br />
+<a href="#pR1">白いツバサ</a></p>
+
+</div>
+
+    </div>
+</div>
+
+</div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 50%;">
+    <div class="flex-box-inner">
+        <div style="text-align:center"><strong>サポート</strong></div>
+<hr class="full_hr" />
+<div class="flex-container" style="justify-content: center;">
+    <div class="flex-box" style="flex-basis: 170px;">
+    <div class="flex-box-inner">
+        <div style="font-size:11px">
+<p><strong><em>SSR</em></strong><br />
+<a href="#sSSR1">ふれんど日和</a><br />
+<a href="#sSSR1">凛世夕町物語</a><br />
+<a href="#sSSR2">常夏CLIMAX</a><br />
+<a href="#sSSR2">夜明けの晩に</a><br />
+<a href="#sSSR3">日を食んで、夜を啜って</a><br />
+<a href="#sSSR3">祝唄-hogiuta-</a><br />
+<a href="#sSSR4">をとめ条約</a><br />
+<a href="#sSSR4">牛的情感盛り、一丁</a><br />
+<a href="#sSSR5">珈琲の牛乳いれたん</a><br />
+<a href="#sSSR5">夏彩フレア</a><br />
+<a href="#sSSR6">一人分の空、一枚の羽</a><br />
+<a href="#sSSR6">白木槿</a><br />
+<a href="#sSSR7">三恋符のソナタ</a><br />
+<a href="#sSSR7">ワーキングスナップ～デート</a><br />
+<a href="#sSSR8">'25Pカップランクイン</a><br />
+<a href="#sSSR8">ゆめのごとし</a><br />
+<a href="#sSSR9">遠き御空</a><br />
+<a href="#sSSR9">流砂の果てに</a><br />
+<a href="#sSSR10">幸あれと</a><br />
+<a href="#sSSR10">歩幅をそろえて</a></p>
+
+</div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 170px;">
+    <div class="flex-box-inner">
+        <div style="font-size:11px">
+<p><strong><em>SR</em></strong><br />
+<a href="#sSR1">百色ふぉとぐらふ</a><br />
+<a href="#sSR1">をとめ大学</a><br />
+<a href="#sSR2">をとめ辞典</a><br />
+<a href="#sSR2">SETSUNA BEAT</a><br />
+<a href="#sSR3">別冊をとめ</a><br />
+<a href="#sSR3">竜想譚</a><br />
+<a href="#sSR4">超純情和菓子専科</a><br />
+<a href="#sSR4">今のすべてを</a><br />
+<a href="#sSR5">なつおもひ</a><br />
+<a href="#sSR5">交雑する心、合わせて</a><br />
+<a href="#sSR6">Over the prism</a><br />
+<a href="#sSR6">'25Pカップ</a><br />
+<a href="#sSR7">をとめ茶会</a></p>
+<p><strong><em>R</em></strong><br />
+<a href="#sR1">283プロのヒナ</a></p>
+
+</div>
+
+    </div>
+</div>
+
+</div>
+
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="accordion-container accordion-open">
+    <h3 class="accordion-header">
+        <i class="fa-solid fa-plus-square hidden-on-open"></i>
+        <i class="fa-solid fa-minus-square visible-on-open"></i>
+        プロデュースアイドル
+    </h3>
+    <div class="accordion-content"><p>カード名かイラストをクリック(タップ)で個別ページへ</p>
+<div class="flex-container" style="">
+    <div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <h4 id="h4_content_23_0" >UR  <a class="anchor_super" name ="v2e17b75"></a> <a class="anchor_super" href="/shinycolors/::cmd/edit?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96&id=v2e17b75" rel='nofollow'><span class="system-icon paraedit" title="Edit"></span></a></h4>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 50%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pUR1"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%B5%B5%E7%A9%BA%E9%9D%B4%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【絵空靴】杜野凛世" class="rel-wiki-page">絵空靴</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%B5%B5%E7%A9%BA%E9%9D%B4%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【絵空靴】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E7%B5%B5%E7%A9%BA%E9%9D%B4%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=3da7c40c2e891182b09c53382cd333da&amp;t=20251008171614" alt="【絵空靴】杜野凛世" title="【絵空靴】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <h4 id="h4_content_25_0" >SSR  <a class="anchor_super" name ="jd81dc99"></a> <a class="anchor_super" href="/shinycolors/::cmd/edit?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96&id=jd81dc99" rel='nofollow'><span class="system-icon paraedit" title="Edit"></span></a></h4>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pSSR1"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96%E3%81%AE%E5%8D%B0%E8%B1%A1%E6%B4%BE%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【杜野凛世の印象派】杜野凛世" class="rel-wiki-page">杜野凛世の印象派</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%87%9B%E4%B8%96%E8%8A%B1%E4%BC%9D%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【凛世花伝】杜野凛世" class="rel-wiki-page">凛世花伝</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96%E3%81%AE%E5%8D%B0%E8%B1%A1%E6%B4%BE%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【杜野凛世の印象派】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96%E3%81%AE%E5%8D%B0%E8%B1%A1%E6%B4%BE%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=3f0c8d136612030d4ebb80464e606331&amp;t=20181228105708" alt="【杜野凛世の印象派】杜野凛世" title="【杜野凛世の印象派】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%87%9B%E4%B8%96%E8%8A%B1%E4%BC%9D%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【凛世花伝】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E5%87%9B%E4%B8%96%E8%8A%B1%E4%BC%9D%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=46cacd03f68e83c0f4079ff3175a5d71&amp;t=20190323145936" alt="【凛世花伝】杜野凛世" title="【凛世花伝】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pSSR2"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%B0%B4%E8%89%B2%E6%84%9F%E6%83%85%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【水色感情】杜野凛世" class="rel-wiki-page">水色感情</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%8D%81%E4%BA%8C%E6%9C%88%E7%9F%AD%E7%AF%87%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【十二月短篇】杜野凛世" class="rel-wiki-page">十二月短篇</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%B0%B4%E8%89%B2%E6%84%9F%E6%83%85%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【水色感情】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E6%B0%B4%E8%89%B2%E6%84%9F%E6%83%85%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=cddb9522a291b42b75b975d2d3db6392&amp;t=20190920172345" alt="【水色感情】杜野凛世" title="【水色感情】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%8D%81%E4%BA%8C%E6%9C%88%E7%9F%AD%E7%AF%87%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【十二月短篇】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E5%8D%81%E4%BA%8C%E6%9C%88%E7%9F%AD%E7%AF%87%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=82ed71d8c4f5eddb10fe56fe5ff59fe1&amp;t=20191214104639" alt="【十二月短篇】杜野凛世" title="【十二月短篇】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pSSR3"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%99%BD%E3%81%84%E3%83%84%E3%83%90%E3%82%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【白いツバサ】杜野凛世" class="rel-wiki-page">アイドルロード</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%82%8F%E3%82%8C%E3%81%AB%E3%81%8B%E3%81%B8%E3%82%8C%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【われにかへれ】杜野凛世" class="rel-wiki-page">われにかへれ</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%99%BD%E3%81%84%E3%83%84%E3%83%90%E3%82%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【白いツバサ】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%AD%E3%83%BC%E3%83%89%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=70c2e54769230f6d9f3a567754857d93&amp;t=20200814050448" alt="【アイドルロード】杜野凛世" title="【アイドルロード】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%82%8F%E3%82%8C%E3%81%AB%E3%81%8B%E3%81%B8%E3%82%8C%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【われにかへれ】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%82%8F%E3%82%8C%E3%81%AB%E3%81%8B%E3%81%B8%E3%82%8C%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=4c8c0baa3b2d8c736ffc59819789e5ec&amp;t=20201124093346" alt="【われにかへれ】杜野凛世" title="【われにかへれ】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pSSR4"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%83%AD%E3%83%BC%E3%83%BB%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ロー・ポジション】杜野凛世" class="rel-wiki-page">ロー・ポジション</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%81%94%E3%81%A4%E3%81%93%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【さよならごつこ】杜野凛世" class="rel-wiki-page">さよならごつこ</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%83%AD%E3%83%BC%E3%83%BB%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ロー・ポジション】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%83%AD%E3%83%BC%E3%83%BB%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=6b250a32ebe3917c554565675acb8dfd&amp;t=20210401232248" alt="【ロー・ポジション】杜野凛世" title="【ロー・ポジション】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%81%94%E3%81%A4%E3%81%93%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【さよならごつこ】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%81%94%E3%81%A4%E3%81%93%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=42e48a43a3959e4da0c869e22c92684a&amp;t=20220101020524" alt="【さよならごつこ】杜野凛世" title="【さよならごつこ】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pSSR5"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%99%A9%E7%A7%8B%E3%82%8D%E3%81%BE%E3%82%93%E3%81%99%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【晩秋ろまんす】杜野凛世" class="rel-wiki-page">晩秋ろまんす</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E8%8A%B1%E3%81%AF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【花は】杜野凛世" class="rel-wiki-page">花は</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%99%A9%E7%A7%8B%E3%82%8D%E3%81%BE%E3%82%93%E3%81%99%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【晩秋ろまんす】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E6%99%A9%E7%A7%8B%E3%82%8D%E3%81%BE%E3%82%93%E3%81%99%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=5298fff8365c5f66509916b2efc2ccd5&amp;t=20221031160309" alt="【晩秋ろまんす】杜野凛世" title="【晩秋ろまんす】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E8%8A%B1%E3%81%AF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【花は】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E8%8A%B1%E3%81%AF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=2f04eb1100865a5f3abe7d494807c2bc&amp;t=20230421165321" alt="【花は】杜野凛世" title="【花は】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pSSR6"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%9F%93%E5%85%89%E6%BA%80%E6%9C%88%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【染光満月】杜野凛世" class="rel-wiki-page">染光満月</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%A1%9D%E5%AD%90%E5%B0%91%E5%A5%B3%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【硝子少女】杜野凛世" class="rel-wiki-page">硝子少女</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%9F%93%E5%85%89%E6%BA%80%E6%9C%88%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【染光満月】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E6%9F%93%E5%85%89%E6%BA%80%E6%9C%88%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=33c65c51df291aeeeb5b1554a173190e&amp;t=20231203043905" alt="【染光満月】杜野凛世" title="【染光満月】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%A1%9D%E5%AD%90%E5%B0%91%E5%A5%B3%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【硝子少女】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E7%A1%9D%E5%AD%90%E5%B0%91%E5%A5%B3%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=71b499584402df2ec2e9cbee90c2b159&amp;t=20240807052101" alt="【硝子少女】杜野凛世" title="【硝子少女】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pSSR7"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%83%A9%E3%83%B4%E3%83%BB%E3%83%AC%E3%82%BF%E3%83%BC%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ラヴ・レター】杜野凛世" class="rel-wiki-page">ラヴ・レター</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%89%87%E6%81%8B%E3%81%AF%E3%81%82%E3%81%A8%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【片恋はあと】杜野凛世" class="rel-wiki-page">片恋はあと</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%83%A9%E3%83%B4%E3%83%BB%E3%83%AC%E3%82%BF%E3%83%BC%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ラヴ・レター】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%83%A9%E3%83%B4%E3%83%BB%E3%83%AC%E3%82%BF%E3%83%BC%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=b64b24361a772520cae2a40b8776b076&amp;t=20241129161407" alt="【ラヴ・レター】杜野凛世" title="【ラヴ・レター】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%89%87%E6%81%8B%E3%81%AF%E3%81%82%E3%81%A8%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【片恋はあと】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E7%89%87%E6%81%8B%E3%81%AF%E3%81%82%E3%81%A8%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=7e2188f42fbae1d00eb317a09518afb5&amp;t=20250812233935" alt="【片恋はあと】杜野凛世" title="【片恋はあと】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <h4 id="h4_content_33_0" >SR  <a class="anchor_super" name ="h61acf39"></a> <a class="anchor_super" href="/shinycolors/::cmd/edit?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96&id=h61acf39" rel='nofollow'><span class="system-icon paraedit" title="Edit"></span></a></h4>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pSR1"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%83%B3%E3%81%B2%E3%81%84%E3%82%8D%E3%81%AF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【想ひいろは】杜野凛世" class="rel-wiki-page">想ひいろは</a></th><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%87%9B%E5%87%9B%E3%80%81%E5%87%9B%E4%B8%96%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【凛凛、凛世】杜野凛世" class="rel-wiki-page">凛凛、凛世</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%83%B3%E3%81%B2%E3%81%84%E3%82%8D%E3%81%AF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【想ひいろは】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E6%83%B3%E3%81%B2%E3%81%84%E3%82%8D%E3%81%AF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=b6265132e08a368284387a30cbb93b25&amp;t=20181228105649" alt="【想ひいろは】杜野凛世" title="【想ひいろは】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%87%9B%E5%87%9B%E3%80%81%E5%87%9B%E4%B8%96%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【凛凛、凛世】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E5%87%9B%E5%87%9B%E3%80%81%E5%87%9B%E4%B8%96%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=12b6ae6bb3f25e909f9978deb2a2ef17&amp;t=20181228105601" alt="【凛凛、凛世】杜野凛世" title="【凛凛、凛世】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pSR2"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%BE%AE%E7%86%B1%E9%A2%A8%E9%88%B4%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【微熱風鈴】杜野凛世" class="rel-wiki-page">微熱風鈴</a></th><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%81%B5%E3%82%89%E3%81%93%E3%81%93%E3%81%AE%E3%81%86%E3%81%9F%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ふらここのうた】杜野凛世" class="rel-wiki-page">ふらここのうた</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%BE%AE%E7%86%B1%E9%A2%A8%E9%88%B4%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【微熱風鈴】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E5%BE%AE%E7%86%B1%E9%A2%A8%E9%88%B4%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=3b01c2832dcd7ede78ca11cf62208412&amp;t=20181228105629" alt="【微熱風鈴】杜野凛世" title="【微熱風鈴】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%81%B5%E3%82%89%E3%81%93%E3%81%93%E3%81%AE%E3%81%86%E3%81%9F%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ふらここのうた】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%81%B5%E3%82%89%E3%81%93%E3%81%93%E3%81%AE%E3%81%86%E3%81%9F%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=0f043e1bbde2da5fa630bcfad3f27449&amp;t=20181228105352" alt="【ふらここのうた】杜野凛世" title="【ふらここのうた】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pSR3"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%99%BD%E3%81%84%E3%83%84%E3%83%90%E3%82%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【白いツバサ】杜野凛世" class="rel-wiki-page">白いツバサ</a></th><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E9%9A%8E%E6%AE%B5%E5%BC%8F%E7%B4%94%E6%83%85%E6%98%87%E9%99%8D%E6%A9%9F%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【階段式純情昇降機】杜野凛世" class="rel-wiki-page">階段式純情昇降機</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%99%BD%E3%81%84%E3%83%84%E3%83%90%E3%82%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【白いツバサ】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E7%99%BD%E3%81%84%E3%83%84%E3%83%90%E3%82%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96SR.jpg?rev=f8232aaa5ef5f742d77c260f101c6eab&amp;t=20200814135707" alt="【白いツバサ】杜野凛世" title="【白いツバサ】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E9%9A%8E%E6%AE%B5%E5%BC%8F%E7%B4%94%E6%83%85%E6%98%87%E9%99%8D%E6%A9%9F%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【階段式純情昇降機】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E9%9A%8E%E6%AE%B5%E5%BC%8F%E7%B4%94%E6%83%85%E6%98%87%E9%99%8D%E6%A9%9F%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=d8bd4370b4339f554a64323ce317edd4&amp;t=20210520162835" alt="【階段式純情昇降機】杜野凛世" title="【階段式純情昇降機】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 50%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pSR4"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%98%A5%E5%91%8A%E7%AA%93%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【春告窓】杜野凛世" class="rel-wiki-page">春告窓</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%98%A5%E5%91%8A%E7%AA%93%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【春告窓】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E6%98%A5%E5%91%8A%E7%AA%93%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=95ea3037bee9acd3155dea32718141f8&amp;t=20220319172131" alt="【春告窓】杜野凛世" title="【春告窓】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <h4 id="h4_content_38_0" >R  <a class="anchor_super" name ="l17b6297"></a> <a class="anchor_super" href="/shinycolors/::cmd/edit?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96&id=l17b6297" rel='nofollow'><span class="system-icon paraedit" title="Edit"></span></a></h4>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 50%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="pR1"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%99%BD%E3%81%84%E3%83%84%E3%83%90%E3%82%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【白いツバサ】杜野凛世" class="rel-wiki-page">白いツバサ</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%99%BD%E3%81%84%E3%83%84%E3%83%90%E3%82%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【白いツバサ】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E7%99%BD%E3%81%84%E3%83%84%E3%83%90%E3%82%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=ab4ccb829fe35318bb9215a2a29193a1&amp;t=20181228105715" alt="【白いツバサ】杜野凛世" title="【白いツバサ】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+
+</div>
+<div class="spacer">&nbsp;</div>
+</div>
+</div>
+<div class="accordion-container accordion-open">
+    <h3 class="accordion-header">
+        <i class="fa-solid fa-plus-square hidden-on-open"></i>
+        <i class="fa-solid fa-minus-square visible-on-open"></i>
+        サポートアイドル
+    </h3>
+    <div class="accordion-content"><p>カード名かイラストをクリック(タップ)で個別ページへ</p>
+<div class="flex-container" style="">
+    <div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <h4 id="h4_content_42_0" >SSR  <a class="anchor_super" name ="w0531273"></a> <a class="anchor_super" href="/shinycolors/::cmd/edit?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96&id=w0531273" rel='nofollow'><span class="system-icon paraedit" title="Edit"></span></a></h4>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSSR1"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%81%B5%E3%82%8C%E3%82%93%E3%81%A9%E6%97%A5%E5%92%8C%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ふれんど日和】杜野凛世" class="rel-wiki-page">ふれんど日和</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%87%9B%E4%B8%96%E5%A4%95%E7%94%BA%E7%89%A9%E8%AA%9E%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【凛世夕町物語】杜野凛世" class="rel-wiki-page">凛世夕町物語</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%81%B5%E3%82%8C%E3%82%93%E3%81%A9%E6%97%A5%E5%92%8C%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ふれんど日和】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%81%B5%E3%82%8C%E3%82%93%E3%81%A9%E6%97%A5%E5%92%8C%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=c1f93a6fba35af3b0aeb2b7e43e10789&amp;t=20181228105410" alt="【ふれんど日和】杜野凛世" title="【ふれんど日和】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%87%9B%E4%B8%96%E5%A4%95%E7%94%BA%E7%89%A9%E8%AA%9E%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【凛世夕町物語】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E5%87%9B%E4%B8%96%E5%A4%95%E7%94%BA%E7%89%A9%E8%AA%9E%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=5cd76f103efa4ce2d0f38f2b8052b71b&amp;t=20190302034314" alt="【凛世夕町物語】杜野凛世" title="【凛世夕町物語】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSSR2"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%B8%B8%E5%A4%8FCLIMAX%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【常夏CLIMAX】杜野凛世" class="rel-wiki-page">常夏CLIMAX</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%A4%9C%E6%98%8E%E3%81%91%E3%81%AE%E6%99%A9%E3%81%AB%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【夜明けの晩に】杜野凛世" class="rel-wiki-page">夜明けの晩に</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%B8%B8%E5%A4%8FCLIMAX%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【常夏CLIMAX】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E5%B8%B8%E5%A4%8FCLIMAX%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.png.webp?rev=0ca1055d5dbe95b0d1e9c4f3d64abf2d&amp;t=20190731171415" alt="【常夏CLIMAX】杜野凛世" title="【常夏CLIMAX】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%A4%9C%E6%98%8E%E3%81%91%E3%81%AE%E6%99%A9%E3%81%AB%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【夜明けの晩に】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E5%A4%9C%E6%98%8E%E3%81%91%E3%81%AE%E6%99%A9%E3%81%AB%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=7ad9513fe6aee85859354955c704a188&amp;t=20200410163047" alt="【夜明けの晩に】杜野凛世" title="【夜明けの晩に】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSSR3"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%97%A5%E3%82%92%E9%A3%9F%E3%82%93%E3%81%A7%E3%80%81%E5%A4%9C%E3%82%92%E5%95%9C%E3%81%A3%E3%81%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【日を食んで、夜を啜って】杜野凛世" class="rel-wiki-page">日を食んで、夜を啜って</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%A5%9D%E5%94%84-hogiuta-%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【祝唄-hogiuta-】杜野凛世" class="rel-wiki-page">祝唄-hogiuta-</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%97%A5%E3%82%92%E9%A3%9F%E3%82%93%E3%81%A7%E3%80%81%E5%A4%9C%E3%82%92%E5%95%9C%E3%81%A3%E3%81%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【日を食んで、夜を啜って】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E6%97%A5%E3%82%92%E9%A3%9F%E3%82%93%E3%81%A7%E3%80%81%E5%A4%9C%E3%82%92%E5%95%9C%E3%81%A3%E3%81%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=fe0f69ee6c09ec7cc0f10dc72d567db4&amp;t=20201211161600" alt="【日を食んで、夜を啜って】杜野凛世" title="【日を食んで、夜を啜って】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%A5%9D%E5%94%84-hogiuta-%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【祝唄-hogiuta-】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E7%A5%9D%E5%94%84-hogiuta-%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=e119f5a12877aa0c66377f9f18027a06&amp;t=20210101011814" alt="【祝唄-hogiuta-】杜野凛世" title="【祝唄-hogiuta-】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSSR4"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E6%9D%A1%E7%B4%84%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【をとめ条約】杜野凛世" class="rel-wiki-page">をとめ条約</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%89%9B%E7%9A%84%E6%83%85%E6%84%9F%E7%9B%9B%E3%82%8A%E3%80%81%E4%B8%80%E4%B8%81%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【牛的情感盛り、一丁】杜野凛世" class="rel-wiki-page">牛的情感盛り、一丁</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E6%9D%A1%E7%B4%84%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【をとめ条約】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E6%9D%A1%E7%B4%84%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=81cdc9ffaafb68d29d5a685162396c62&amp;t=20210930162125" alt="【をとめ条約】杜野凛世" title="【をとめ条約】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%89%9B%E7%9A%84%E6%83%85%E6%84%9F%E7%9B%9B%E3%82%8A%E3%80%81%E4%B8%80%E4%B8%81%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【牛的情感盛り、一丁】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E7%89%9B%E7%9A%84%E6%83%85%E6%84%9F%E7%9B%9B%E3%82%8A%E3%80%81%E4%B8%80%E4%B8%81%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=754d8feb968c77234d558ba68d85441b&amp;t=20211021163802" alt="【牛的情感盛り、一丁】杜野凛世" title="【牛的情感盛り、一丁】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSSR5"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%8F%88%E7%90%B2%E3%81%AE%E7%89%9B%E4%B9%B3%E3%81%84%E3%82%8C%E3%81%9F%E3%82%93%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【珈琲の牛乳いれたん】杜野凛世" class="rel-wiki-page">珈琲の牛乳いれたん</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%A4%8F%E5%BD%A9%E3%83%95%E3%83%AC%E3%82%A2%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【夏彩フレア】杜野凛世" class="rel-wiki-page">夏彩フレア</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%8F%88%E7%90%B2%E3%81%AE%E7%89%9B%E4%B9%B3%E3%81%84%E3%82%8C%E3%81%9F%E3%82%93%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【珈琲の牛乳いれたん】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E7%8F%88%E7%90%B2%E3%81%AE%E7%89%9B%E4%B9%B3%E3%81%84%E3%82%8C%E3%81%9F%E3%82%93%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=3504ec28bbcc6ea880fc8e77c5a7726f&amp;t=20220831163336" alt="【珈琲の牛乳いれたん】杜野凛世" title="【珈琲の牛乳いれたん】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%A4%8F%E5%BD%A9%E3%83%95%E3%83%AC%E3%82%A2%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【夏彩フレア】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E5%A4%8F%E5%BD%A9%E3%83%95%E3%83%AC%E3%82%A2%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=7a1458a34f7bb4c07792a79a49c115ff&amp;t=20230720162859" alt="【夏彩フレア】杜野凛世" title="【夏彩フレア】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSSR6"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E4%B8%80%E4%BA%BA%E5%88%86%E3%81%AE%E7%A9%BA%E3%80%81%E4%B8%80%E6%9E%9A%E3%81%AE%E7%BE%BD%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【一人分の空、一枚の羽】杜野凛世" class="rel-wiki-page">一人分の空、一枚の羽</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%99%BD%E6%9C%A8%E6%A7%BF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【白木槿】杜野凛世" class="rel-wiki-page">白木槿</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E4%B8%80%E4%BA%BA%E5%88%86%E3%81%AE%E7%A9%BA%E3%80%81%E4%B8%80%E6%9E%9A%E3%81%AE%E7%BE%BD%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【一人分の空、一枚の羽】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E4%B8%80%E4%BA%BA%E5%88%86%E3%81%AE%E7%A9%BA%E3%80%81%E4%B8%80%E6%9E%9A%E3%81%AE%E7%BE%BD%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=8e357762c8c4d46cfc319bd83fc3c092&amp;t=20240121080623" alt="【一人分の空、一枚の羽】杜野凛世" title="【一人分の空、一枚の羽】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%99%BD%E6%9C%A8%E6%A7%BF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【白木槿】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E7%99%BD%E6%9C%A8%E6%A7%BF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=5cbbe9e9d58652545bc6fa565852ac7a&amp;t=20240607154213" alt="【白木槿】杜野凛世" title="【白木槿】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSSR7"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E4%B8%89%E6%81%8B%E7%AC%A6%E3%81%AE%E3%82%BD%E3%83%8A%E3%82%BF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【三恋符のソナタ】杜野凛世" class="rel-wiki-page">三恋符のソナタ</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%83%AF%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%EF%BD%9E%E3%83%87%E3%83%BC%E3%83%88%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ワーキングスナップ～デート】杜野凛世" class="rel-wiki-page">ワーキングスナップ～デート</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E4%B8%89%E6%81%8B%E7%AC%A6%E3%81%AE%E3%82%BD%E3%83%8A%E3%82%BF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【三恋符のソナタ】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E4%B8%89%E6%81%8B%E7%AC%A6%E3%81%AE%E3%82%BD%E3%83%8A%E3%82%BF%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=0a170e1c814cfc87c2d24c333f11f969&amp;t=20241031173352" alt="【三恋符のソナタ】杜野凛世" title="【三恋符のソナタ】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%83%AF%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%EF%BD%9E%E3%83%87%E3%83%BC%E3%83%88%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ワーキングスナップ～デート】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%83%AF%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%EF%BD%9E%E3%83%87%E3%83%BC%E3%83%88%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=cffab3694163e7ea211832ea0ddda8f6&amp;t=20250214185605" alt="【ワーキングスナップ～デート】杜野凛世" title="【ワーキングスナップ～デート】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSSR8"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%2725P%E3%82%AB%E3%83%83%E3%83%97%E3%83%A9%E3%83%B3%E3%82%AF%E3%82%A4%E3%83%B3%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【&#039;25Pカップランクイン】杜野凛世" class="rel-wiki-page">'25Pカップランクイン</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%82%86%E3%82%81%E3%81%AE%E3%81%94%E3%81%A8%E3%81%97%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ゆめのごとし】杜野凛世" class="rel-wiki-page">ゆめのごとし</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%2725P%E3%82%AB%E3%83%83%E3%83%97%E3%83%A9%E3%83%B3%E3%82%AF%E3%82%A4%E3%83%B3%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【&#039;25Pカップランクイン】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%2725P%E3%82%AB%E3%83%83%E3%83%97%E3%83%A9%E3%83%B3%E3%82%AF%E3%82%A4%E3%83%B3%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=69434e80181bb8ad970c830611bdfd69&amp;t=20260222212859" alt="【&#039;25Pカップランクイン】杜野凛世" title="【&#039;25Pカップランクイン】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%82%86%E3%82%81%E3%81%AE%E3%81%94%E3%81%A8%E3%81%97%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【ゆめのごとし】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%82%86%E3%82%81%E3%81%AE%E3%81%94%E3%81%A8%E3%81%97%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=fb9a911df415f67ec0acdfe232520e46&amp;t=20251019021210" alt="【ゆめのごとし】杜野凛世" title="【ゆめのごとし】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSSR9"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E9%81%A0%E3%81%8D%E5%BE%A1%E7%A9%BA%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【遠き御空】杜野凛世" class="rel-wiki-page">遠き御空</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%B5%81%E7%A0%82%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【流砂の果てに】杜野凛世" class="rel-wiki-page">流砂の果てに</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E9%81%A0%E3%81%8D%E5%BE%A1%E7%A9%BA%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【遠き御空】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E9%81%A0%E3%81%8D%E5%BE%A1%E7%A9%BA%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=88b88e068a8e98862afb1d9b4fc76004&amp;t=20260318184011" alt="【遠き御空】杜野凛世" title="【遠き御空】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%B5%81%E7%A0%82%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【流砂の果てに】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E6%B5%81%E7%A0%82%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=992c69f1657af2b2aa0df40ebdfe329c&amp;t=20260407165732" alt="【流砂の果てに】杜野凛世" title="【流砂の果てに】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSSR10"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%B9%B8%E3%81%82%E3%82%8C%E3%81%A8%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【幸あれと】杜野凛世" class="rel-wiki-page">幸あれと</a></th><th style="background-color:lavenderblush; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%AD%A9%E5%B9%85%E3%82%92%E3%81%9D%E3%82%8D%E3%81%88%E3%81%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【歩幅をそろえて】杜野凛世" class="rel-wiki-page">歩幅をそろえて</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%B9%B8%E3%81%82%E3%82%8C%E3%81%A8%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【幸あれと】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E5%B9%B8%E3%81%82%E3%82%8C%E3%81%A8%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=0560811982165b3a1797ecf03b54c1d4&amp;t=20260618170915" alt="【幸あれと】杜野凛世" title="【幸あれと】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E6%AD%A9%E5%B9%85%E3%82%92%E3%81%9D%E3%82%8D%E3%81%88%E3%81%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【歩幅をそろえて】杜野凛世" class="rel-wiki-page">&amp;ref(): File not found: &quot;【歩幅をそろえて】杜野凛世.jpg&quot; at page &quot;杜野凛世&quot;;</a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <h4 id="h4_content_53_0" >SR  <a class="anchor_super" name ="v8d15a3b"></a> <a class="anchor_super" href="/shinycolors/::cmd/edit?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96&id=v8d15a3b" rel='nofollow'><span class="system-icon paraedit" title="Edit"></span></a></h4>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSR1"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%99%BE%E8%89%B2%E3%81%B5%E3%81%89%E3%81%A8%E3%81%90%E3%82%89%E3%81%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【百色ふぉとぐらふ】杜野凛世" class="rel-wiki-page">百色ふぉとぐらふ</a></th><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E5%A4%A7%E5%AD%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【をとめ大学】杜野凛世" class="rel-wiki-page">をとめ大学</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%99%BE%E8%89%B2%E3%81%B5%E3%81%89%E3%81%A8%E3%81%90%E3%82%89%E3%81%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【百色ふぉとぐらふ】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E7%99%BE%E8%89%B2%E3%81%B5%E3%81%89%E3%81%A8%E3%81%90%E3%82%89%E3%81%B5%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=bf4990c8decbcd39952fc0ff8f98ad40&amp;t=20181228105733" alt="【百色ふぉとぐらふ】杜野凛世" title="【百色ふぉとぐらふ】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E5%A4%A7%E5%AD%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【をとめ大学】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E5%A4%A7%E5%AD%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=d266c866e8249f6d6db36e9bd27f6d82&amp;t=20190521170305" alt="【をとめ大学】杜野凛世" title="【をとめ大学】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSR2"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E8%BE%9E%E5%85%B8%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【をとめ辞典】杜野凛世" class="rel-wiki-page">をとめ辞典</a></th><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90SETSUNA%20BEAT%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【SETSUNA BEAT】杜野凛世" class="rel-wiki-page">SETSUNA BEAT</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E8%BE%9E%E5%85%B8%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【をとめ辞典】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E8%BE%9E%E5%85%B8%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=a03031b65149fb50c8d088e6e1034a93&amp;t=20200212210603" alt="【をとめ辞典】杜野凛世" title="【をとめ辞典】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90SETSUNA%20BEAT%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【SETSUNA BEAT】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90SETSUNA%20BEAT%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=547fe8360a4a8733ae23ef7e92322a92&amp;t=20220813230712" alt="【SETSUNA BEAT】杜野凛世" title="【SETSUNA BEAT】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSR3"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%88%A5%E5%86%8A%E3%82%92%E3%81%A8%E3%82%81%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【別冊をとめ】杜野凛世" class="rel-wiki-page">別冊をとめ</a></th><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%AB%9C%E6%83%B3%E8%AD%9A%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【竜想譚】杜野凛世" class="rel-wiki-page">竜想譚</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E5%88%A5%E5%86%8A%E3%82%92%E3%81%A8%E3%82%81%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【別冊をとめ】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E5%88%A5%E5%86%8A%E3%82%92%E3%81%A8%E3%82%81%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=ddfccb1ce267decf0cd9acdc4e113eb5&amp;t=20221020211329" alt="【別冊をとめ】杜野凛世" title="【別冊をとめ】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E7%AB%9C%E6%83%B3%E8%AD%9A%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【竜想譚】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E7%AB%9C%E6%83%B3%E8%AD%9A%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=c9342e5765547b66400b497a337877b5&amp;t=20231010160855" alt="【竜想譚】杜野凛世" title="【竜想譚】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSR4"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E8%B6%85%E7%B4%94%E6%83%85%E5%92%8C%E8%8F%93%E5%AD%90%E5%B0%82%E7%A7%91%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【超純情和菓子専科】杜野凛世" class="rel-wiki-page">超純情和菓子専科</a></th><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E4%BB%8A%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6%E3%82%92%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【今のすべてを】杜野凛世" class="rel-wiki-page">今のすべてを</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E8%B6%85%E7%B4%94%E6%83%85%E5%92%8C%E8%8F%93%E5%AD%90%E5%B0%82%E7%A7%91%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【超純情和菓子専科】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E8%B6%85%E7%B4%94%E6%83%85%E5%92%8C%E8%8F%93%E5%AD%90%E5%B0%82%E7%A7%91%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=4423d5e9e3696592c43e6c49d8e75447&amp;t=20240311164454" alt="【超純情和菓子専科】杜野凛世" title="【超純情和菓子専科】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E4%BB%8A%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6%E3%82%92%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【今のすべてを】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E4%BB%8A%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6%E3%82%92%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=9ba0728b27cffd88aed68e57af57d060&amp;t=20240526001704" alt="【今のすべてを】杜野凛世" title="【今のすべてを】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSR5"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%81%AA%E3%81%A4%E3%81%8A%E3%82%82%E3%81%B2%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【なつおもひ】杜野凛世" class="rel-wiki-page">なつおもひ</a></th><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E4%BA%A4%E9%9B%91%E3%81%99%E3%82%8B%E5%BF%83%E3%80%81%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【交雑する心、合わせて】杜野凛世" class="rel-wiki-page">交雑する心、合わせて</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%81%AA%E3%81%A4%E3%81%8A%E3%82%82%E3%81%B2%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【なつおもひ】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%81%AA%E3%81%A4%E3%81%8A%E3%82%82%E3%81%B2%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=8754f0119994d55f7329afef7590e4ef&amp;t=20240718161711" alt="【なつおもひ】杜野凛世" title="【なつおもひ】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E4%BA%A4%E9%9B%91%E3%81%99%E3%82%8B%E5%BF%83%E3%80%81%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【交雑する心、合わせて】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E4%BA%A4%E9%9B%91%E3%81%99%E3%82%8B%E5%BF%83%E3%80%81%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=2afcfbdb7c4d8ecbef042978e818db0b&amp;t=20241105224755" alt="【交雑する心、合わせて】杜野凛世" title="【交雑する心、合わせて】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSR6"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90Over%20the%20prism%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【Over the prism】杜野凛世" class="rel-wiki-page">Over the prism</a></th><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%2725P%E3%82%AB%E3%83%83%E3%83%97%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【&#039;25Pカップ】杜野凛世" class="rel-wiki-page">'25Pカップ</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90Over%20the%20prism%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【Over the prism】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90Over%20the%20prism%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=15c8783dff326d48f9dd463afcba8c0d&amp;t=20250518041834" alt="【Over the prism】杜野凛世" title="【Over the prism】杜野凛世" width="320" height="180"  loading="lazy"></a></td><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%2725P%E3%82%AB%E3%83%83%E3%83%97%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【&#039;25Pカップ】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%2725P%E3%82%AB%E3%83%83%E3%83%97%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=c3036f65902548af7b906445f504c00e&amp;t=20250417220450" alt="【&#039;25Pカップ】杜野凛世" title="【&#039;25Pカップ】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 50%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sSR7"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="background-color:cornsilk; text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E8%8C%B6%E4%BC%9A%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【をとめ茶会】杜野凛世" class="rel-wiki-page">をとめ茶会</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E8%8C%B6%E4%BC%9A%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【をとめ茶会】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90%E3%82%92%E3%81%A8%E3%82%81%E8%8C%B6%E4%BC%9A%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg.webp?rev=0630d44da83fb40cf63c5707e6127c03&amp;t=20250929170354" alt="【をとめ茶会】杜野凛世" title="【をとめ茶会】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 100%;">
+    <div class="flex-box-inner">
+        <h4 id="h4_content_61_0" >R  <a class="anchor_super" name ="j925a50f"></a> <a class="anchor_super" href="/shinycolors/::cmd/edit?page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96&id=j925a50f" rel='nofollow'><span class="system-icon paraedit" title="Edit"></span></a></h4>
+
+    </div>
+</div>
+<div class="flex-box" style="flex-basis: 50%;">
+    <div class="flex-box-inner">
+        <a class="anchor" name ="sR1"></a>
+<div class="h-scrollable"><table><tbody><tr><th style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90283%E3%83%97%E3%83%AD%E3%81%AE%E3%83%92%E3%83%8A%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【283プロのヒナ】杜野凛世" class="rel-wiki-page">283プロのヒナ</a></th></tr><tr><td style="text-align:center; width:320px;"><a href="/shinycolors/%E3%80%90283%E3%83%97%E3%83%AD%E3%81%AE%E3%83%92%E3%83%8A%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="【283プロのヒナ】杜野凛世" class="rel-wiki-page"><img src="https://cdn.wikiwiki.jp/to/w/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96/::ref/%E3%80%90283%E3%83%97%E3%83%AD%E3%81%AE%E3%83%92%E3%83%8A%E3%80%91%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96.jpg?rev=a97804d28cff7e24cb3998d7c0d109fd&amp;t=20181228105321" alt="【283プロのヒナ】杜野凛世" title="【283プロのヒナ】杜野凛世" width="320" height="180"  loading="lazy"></a></td></tr></tbody></table></div>
+
+    </div>
+</div>
+
+</div>
+<div class="spacer">&nbsp;</div>
+</div>
+</div>
+<div class="spacer">&nbsp;</div>
+<div class="spacer">&nbsp;</div>
+<div class="spacer">&nbsp;</div>
+<hr class="full_hr" />
+<div class="spacer">&nbsp;</div>
+<div style="text-align:center"><span style="font-size:10px">&#169;BANDAI NAMCO Entertainment Inc.<br class="spacer">当Wiki上で用いるゲーム画像の著作権、及びその他知的財産権は<br class="spacer">当該サービスの提供元に帰属します。</span></div>
+<div class="spacer">&nbsp;</div>
+
+                </div>
+                <div id="main-contents-bottom">
+                    <div class="caption-flybox" >
+<div id="pc-bottom-parent-ad-container" style="min-height:250px;">
+<div id="pc-bottom-left-ad-container">
+    <!-- /19033742/WIKIWIKI_PC_BOTTOM_LEFT or /19033742/WIKIWIKI_SP_SECOND -->
+    <div id='div-gpt-ad-1567408559923-0' class="hidden-switch-class"></div>
+</div>
+<div id="pc-bottom-right-ad-container">
+    <!-- /19033742/WIKIWIKI_PC_BOTTOM_RIGHT -->
+    <div id='div-gpt-ad-1658912377789-0'></div>
+</div>
+</div>
+</div>
+
+<style>
+.pc-bottom-ad-default {
+    margin-top:120px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:flex-start;
+    gap: 10px 5px;
+}
+.pc-bottom-ad-center{
+    margin-top:120px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap: 10px 5px;
+}
+.pc-bottom-ad-mobile{
+    margin-top:20px;
+    margin-bottom:20px;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    position:sticky;
+    z-index: 3;
+    top:45px;
+}
+</style>
+
+<script>
+(function() {
+    var body = document.getElementById('body');
+    var co = document.getElementById("pc-bottom-parent-ad-container");
+    var fh = 50;
+    if (!wi_ismobile && body.clientHeight < 620) {
+        co.style.marginTop = '200px';
+    }
+    if (wi_ismobile && body.clientWidth < 400){
+        co.classList.add("pc-bottom-ad-mobile");
+    } else if (co.clientWidth < 769) {
+        co.classList.add("pc-bottom-ad-center");
+    } else {
+        co.classList.add("pc-bottom-ad-default");
+    }
+}());
+</script>
+                </div>
+
+            </div>
+        </div>
+
+        
+                    <div class="column-left">
+                <div id="menubar">
+                                        <h2 id="h2_content_6_0" >ガイド<a class="anchor" name ="menubar_guide"></a></h2>
+<p><a href="/shinycolors/%E3%82%B7%E3%83%A3%E3%83%8B%E3%83%9E%E3%82%B9%E3%81%A8%E3%81%AF" title="シャニマスとは" class="rel-wiki-page">シャニマスとは</a><br />
+<a href="/shinycolors/%E5%88%9D%E5%BF%83%E8%80%85%E3%81%95%E3%82%93%E5%90%91%E3%81%91%E3%83%9A%E3%83%BC%E3%82%B8%E6%A1%88" title="初心者さん向けページ案" class="rel-wiki-page">初心者ガイド</a><br />
+<a href="/shinycolors/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F" title="よくある質問" class="rel-wiki-page">よくある質問</a><br />
+<a href="/shinycolors/%E3%82%B3%E3%83%9F%E3%83%A5%E5%AE%9F%E8%A3%85%E9%A0%86" title="コミュ実装順" class="rel-wiki-page">コミュ実装順</a></p>
+<hr class="full_hr" />
+<p><strong>【<a href="/shinycolors/283%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8" title="283ステージ" class="rel-wiki-page">283ステージ</a>】</strong> <span class="wikicolor" style="color:red"><strong>New!</strong></span></p>
+<hr class="full_hr" />
+<div class="h-scrollable"><table><tbody><tr><td colspan="2" style="background-color:#e0e8f0; text-align:left;"><a href="/shinycolors/say%20%E2%80%9DHalo%E2%80%9D%E7%B7%A8" title="say ”Halo”編" class="rel-wiki-page"><strong>【say ”Halo”編】</strong></a></td></tr><tr><td style="text-align:center; width:98px;"><a href="/shinycolors/%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6%E3%83%96%E3%83%83%E3%82%AF" title="ノウハウブック" class="rel-wiki-page">ノウハウブック</a></td><td style="text-align:center; width:62px;"><a href="/shinycolors/say%20%E2%80%9DHalo%E2%80%9D%E7%B7%A8#live_program" title="say ”Halo”編" class="rel-wiki-page">オデ詳細</a></td></tr></tbody></table></div>
+<p><strong>【Menu内カテゴリ移動】</strong><br />
+▽<a href="#menubar_prd">プロデュースの基本</a>へ<br />
+▽<a href="#menubar_game">攻略情報</a>へ<br />
+▽<a href="#menubar_unit">ユニット編成対策</a>へ<br />
+▽<a href="#menubar_idol">283プロ所属アイドル</a>へ</p>
+<form action="/shinycolors/::cmd/jumplist?refer=BLEND%EF%BC%8FMIX" method="post">
+ <div>
+  <select name="select"><option value="アイドルユニット紹介">アイドル一覧</option>
+<option value="櫻木真乃">櫻木真乃</option>
+<option value="風野灯織">風野灯織</option>
+<option value="八宮めぐる">八宮めぐる</option>
+<option value="月岡恋鐘">月岡恋鐘</option>
+<option value="田中摩美々">田中摩美々</option>
+<option value="白瀬咲耶">白瀬咲耶</option>
+<option value="三峰結華">三峰結華</option>
+<option value="幽谷霧子">幽谷霧子</option>
+<option value="小宮果穂">小宮果穂</option>
+<option value="園田智代子">園田智代子</option>
+<option value="西城樹里">西城樹里</option>
+<option value="杜野凛世">杜野凛世</option>
+<option value="有栖川夏葉">有栖川夏葉</option>
+<option value="大崎甘奈">大崎甘奈</option>
+<option value="大崎甜花">大崎甜花</option>
+<option value="桑山千雪">桑山千雪</option>
+<option value="芹沢あさひ">芹沢あさひ</option>
+<option value="黛冬優子">黛冬優子</option>
+<option value="和泉愛依">和泉愛依</option>
+<option value="浅倉透">浅倉透</option>
+<option value="樋口円香">樋口円香</option>
+<option value="福丸小糸">福丸小糸</option>
+<option value="市川雛菜">市川雛菜</option>
+<option value="七草にちか">七草にちか</option>
+<option value="緋田美琴">緋田美琴</option>
+<option value="斑鳩ルカ">斑鳩ルカ</option>
+<option value="鈴木羽那">鈴木羽那</option>
+<option value="郁田はるき">郁田はるき</option>
+<option value="七草はづき">七草はづき</option>
+<option value="コラボアイドル">コラボidol</option>
+</select>
+  <input type="submit" name="jump" value="GO" />
+ </div>
+</form>
+<h3 id="h3_content_6_1" class="heading-after-first">イベント</h3>
+<p><strong>【開催中】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/%E3%82%B3%E3%83%A9%E3%83%9C%E3%83%95%E3%82%A7%E3%82%B9%E3%80%90%E7%AC%AC33%E5%9B%9E%E3%80%91" title="コラボフェス【第33回】" class="rel-wiki-page">コラボフェス</a><br />
+～2026/08/19 11:59<br />
+(終了まであと <span class="realtime-countdown" data-limit="1787108399" data-mode="day"><span class="countdown-remaining"></span><span class="countdown-contents" style="display: none;">0秒</span></span>)</li>
+<li>２８３ステージ～プレリリース～記念CP特別ミッション<br class="spacer"><a href="/shinycolors/%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3#mission_20260730_1" title="ミッション" class="rel-wiki-page">毎日</a> (毎日更新) / <a href="/shinycolors/%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3#mission_20260730_2" title="ミッション" class="rel-wiki-page">第1弾</a> / <a href="/shinycolors/%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3#mission_20260807" title="ミッション" class="rel-wiki-page">第2弾</a><br />
+～2026/08/28 11:59<br />
+(終了まであと <span class="realtime-countdown" data-limit="1787885999" data-mode="day"><span class="countdown-remaining"></span><span class="countdown-contents" style="display: none;">0秒</span></span>)</li>
+<li><a href="/shinycolors/%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3#mission_20260801" title="ミッション" class="rel-wiki-page">8周年の令和8年8月は毎日特別ミッション</a> (毎日更新)<br />
+～2026/08/31 23:59<br />
+(終了まであと <span class="realtime-countdown" data-limit="1788188399" data-mode="day"><span class="countdown-remaining"></span><span class="countdown-contents" style="display: none;">0秒</span></span>)</li></ul>
+<hr class="full_hr" />
+<p><a href="/shinycolors/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1" title="イベント情報" class="rel-wiki-page">イベント情報</a></p>
+<hr class="full_hr" />
+<p><strong>【フェス/MATCH LIVE】</strong></p>
+<div class="h-scrollable"><table><thead><tr><th colspan="4" style="text-align:center;">フェス流行(ルール)</th></tr></thead><tbody><tr><td colspan="4" style="text-align:center;">～2026/08/19 11:59</td></tr><tr><th style="text-align:center; width:30px;">流1</th><th style="text-align:center; width:30px;">流2</th><th style="text-align:center; width:30px;">流3</th><th style="text-align:center; width:70px;">ターン制限</th></tr><tr><td style="background-color:lightpink; text-align:center; width:30px;"><strong>Vo</strong></td><td style="background-color:lemonchiffon; text-align:center; width:30px;"><strong>Vi</strong></td><td style="background-color:paleturquoise; text-align:center; width:30px;"><strong>Da</strong></td><td style="text-align:center; width:70px;">7ターン</td></tr></tbody></table></div>
+<div class="h-scrollable"><table><tbody><tr><td style="width:100px;"><a href="/shinycolors/%E3%83%95%E3%82%A7%E3%82%B9%E9%96%8B%E5%82%AC%E6%83%85%E5%A0%B1" title="フェス開催情報" class="rel-wiki-page">フェス開催情報</a></td><td style="text-align:center; width:60px;"><a href="/shinycolors/%E3%83%95%E3%82%A7%E3%82%B9/%E4%BD%BF%E7%94%A8%E7%8E%872" title="フェス/使用率2" class="rel-wiki-page">使用率</a></td></tr></tbody></table></div>
+<div class="h-scrollable"><table><thead><tr><td colspan="2">　<a href="/shinycolors/MATCH%20LIVE" title="MATCH LIVE" class="rel-wiki-page">MATCH LIVE</a></td></tr></thead><tfoot><tr><td style="text-align:center; width:40px;"><a href="/shinycolors/%E9%81%A9%E6%80%A7%E4%B8%80%E8%A6%A7" title="適性一覧" class="rel-wiki-page">適性</a></td><td style="text-align:center; width:120px;"><a href="/shinycolors/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%88%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7" title="ファイトスキル一覧" class="rel-wiki-page">ファイトスキル</a></td></tr><tr><td style="background-color:#a9a9a9; text-align:center; width:40px;"></td><td style="background-color:#a9a9a9; text-align:center; width:120px;"></td></tr></tfoot><tbody><tr><td colspan="2" style="text-align:center;">～2026/08/28 11:59<br class="spacer">(終了まであと <span class="realtime-countdown" data-limit="1787885999" data-mode="day"><span class="countdown-remaining"></span><span class="countdown-contents" style="display: none;">0秒</span></span>)</td></tr></tbody></table></div>
+<div class="h-scrollable"><table><tfoot><tr><td style="text-align:center; width:80px;"><a href="/shinycolors/%E9%81%95%E5%8F%8D%E9%80%9A%E5%A0%B1%E6%9D%BF" title="違反通報板" class="rel-wiki-page">違反通報板</a></td><td style="text-align:center; width:80px;"><a href="/shinycolors/%E7%B7%A8%E9%9B%86%E7%9B%B8%E8%AB%87%E6%89%80" title="編集相談所" class="rel-wiki-page">編集相談所</a></td></tr><tr><td colspan="2" style="text-align:center;"><a href="/shinycolors/%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E3%82%A2%E3%82%A6%E3%83%88%E5%A0%B1%E5%91%8A%E6%9D%BF" title="コメントアウト報告板" class="rel-wiki-page">コメントアウト報告板</a></td></tr></tfoot><tbody><tr><th colspan="2" style="text-align:center;">掲示板／管理板</th></tr><tr><td style="text-align:center; width:80px;"><a href="/shinycolors/%E8%B3%AA%E5%95%8F%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E5%A0%B4" title="質問コメント場" class="rel-wiki-page">質問掲示板</a></td><td style="text-align:center; width:80px;"><a href="/shinycolors/%E9%9B%91%E8%AB%87%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E5%A0%B4" title="雑談コメント場" class="rel-wiki-page">雑談掲示板</a></td></tr><tr><td colspan="2" style="text-align:center;"><a href="/shinycolors/%E6%83%85%E5%A0%B1%E6%8F%90%E4%BE%9B" title="情報提供" class="rel-wiki-page">情報提供</a>(お願いします)</td></tr></tbody></table></div>
+<div class="spacer">&nbsp;</div>
+<div class="h-scrollable"><table><tbody><tr><th colspan="3">ホームメニュー<a class="anchor" name ="menubar_prd"></a></th></tr><tr><td style="text-align:center; width:50px;"><a href="/shinycolors/%E3%82%AC%E3%82%B7%E3%83%A3" title="ガシャ" class="rel-wiki-page">ガシャ</a></td><td style="text-align:center; width:66px;"><a href="/shinycolors/%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97" title="ショップ" class="rel-wiki-page">ショップ</a></td><td style="text-align:center; width:44px;"><a href="/shinycolors/%E5%96%B6%E6%A5%AD%E3%81%AE%E5%9F%BA%E6%9C%AC" title="営業の基本" class="rel-wiki-page">営業</a></td></tr></tbody></table></div>
+<div class="h-scrollable"><table><tbody><tr><td style="text-align:center; width:80px;"><a href="/shinycolors/%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3" title="ミッション" class="rel-wiki-page">ミッション</a></td><td style="text-align:center; width:80px;"><a href="/shinycolors/%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B5%E3%83%BC%E3%83%87%E3%82%B9%E3%82%AF" title="プロデューサーデスク" class="rel-wiki-page">Pデスク</a></td></tr></tbody></table></div>
+<h2 id="h2_content_6_2" class="heading-after-first">プロデュースの基本</h2>
+<ul class="list1"><li><a href="/shinycolors/%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9" title="プロデュース" class="rel-wiki-page">プロデュースガイド</a></li>
+<li><a href="/shinycolors/%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9#autoproduce" title="プロデュース" class="rel-wiki-page">オートプロデュース</a></li>
+<li><a href="/shinycolors/%E3%82%B3%E3%83%9F%E3%83%A5%E5%AE%9F%E8%A3%85%E9%A0%86#sub-view" title="コミュ実装順" class="rel-wiki-page">コミュ並列閲覧機能</a></li>
+<li><a href="/shinycolors/%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9#trustlevel" title="プロデュース" class="rel-wiki-page">信頼度</a></li>
+<li><a href="/shinycolors/%E3%82%B9%E3%82%AD%E3%83%AB%E5%8A%B9%E6%9E%9C%E3%81%AE%E8%A7%A3%E8%AA%AC" title="スキル効果の解説" class="rel-wiki-page">スキル効果の解説</a></li></ul>
+<p><strong>【育成サポート】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9#assistance" title="プロデュース" class="rel-wiki-page">アイドルの応援</a></li>
+<li><a href="/shinycolors/%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9#sptr_hadzuki" title="プロデュース" class="rel-wiki-page">特訓はづきさん</a></li>
+<li><a href="/shinycolors/%E3%83%A1%E3%83%A2%E3%83%AA%E3%83%BC%E3%83%96%E3%83%BC%E3%82%B9%E3%83%88" title="メモリーブースト" class="rel-wiki-page">メモリーブースト</a></li>
+<li><a href="/shinycolors/Ex%E3%82%B9%E3%82%AD%E3%83%AB" title="Exスキル" class="rel-wiki-page">Exスキル</a></li>
+<li><a href="/shinycolors/%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0" title="プロデュースアイテム" class="rel-wiki-page">プロデュースアイテム</a></li>
+<li><a href="/shinycolors/%E8%A8%98%E8%80%85%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88" title="記者イベント" class="rel-wiki-page">記者イベント</a></li>
+<li><a href="/shinycolors/%E3%81%AF%E3%81%A5%E3%81%8D%E3%81%95%E3%82%93%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%88" title="はづきさんアシスト" class="rel-wiki-page">はづきさんアシスト</a></li></ul>
+<p><strong>【StepUpミッション】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%AD%E3%83%BC%E3%83%89" title="アイドルロード" class="rel-wiki-page">アイドルロード</a></li>
+<li><a href="/shinycolors/%E5%88%9D%E5%BF%83%E8%80%85%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3" title="初心者ミッション" class="rel-wiki-page">初心者ミッション</a></li>
+<li><a href="/shinycolors/%E5%88%9D%E5%BF%83%E8%80%85%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3#ce340b42" title="初心者ミッション" class="rel-wiki-page">W.I.N.G.攻略ミッション</a></li>
+<li><a href="/shinycolors/TrueEnd%E6%94%BB%E7%95%A5#ffdaf7ce" title="TrueEnd攻略" class="rel-wiki-page">TrueEnd研修</a></li></ul>
+<h2 id="h2_content_6_3" class="heading-after-first">攻略情報<a class="anchor" name ="menubar_game"></a></h2>
+<p><strong>【W.I.N.G.編】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/%E8%82%B2%E6%88%90%E3%81%AE%E6%8C%87%E9%87%9D" title="育成の指針" class="rel-wiki-page">育成の指針</a></li>
+<li><a href="/shinycolors/%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E5%9F%BA%E6%9C%AC" title="オーディションの基本" class="rel-wiki-page">オーディションの基本</a></li>
+<li><a href="/shinycolors/%E5%90%84%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3%E5%80%8B%E5%88%A5%E6%94%BB%E7%95%A5" title="各オーディション個別攻略" class="rel-wiki-page">各オーディション個別攻略</a>
+<ul class="list2"><li><a href="/shinycolors/%E5%90%84%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3%E5%80%8B%E5%88%A5%E6%94%BB%E7%95%A5#cheatsheet" title="各オーディション個別攻略" class="rel-wiki-page">危険地帯早見表</a></li></ul></li>
+<li><a href="/shinycolors/TrueEnd%E6%94%BB%E7%95%A5" title="TrueEnd攻略" class="rel-wiki-page">TrueEnd攻略</a></li>
+<li><a href="/shinycolors/S%E3%83%A9%E3%83%B3%E3%82%AF%E6%94%BB%E7%95%A5" title="Sランク攻略" class="rel-wiki-page">Sランク攻略</a></li></ul>
+<p><strong>【ファン感謝祭編】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/%E3%83%95%E3%82%A1%E3%83%B3%E6%84%9F%E8%AC%9D%E7%A5%AD%E7%B7%A8%28%E4%BB%AE%E3%83%9A%E3%83%BC%E3%82%B8%29" title="ファン感謝祭編(仮ページ)" class="rel-wiki-page">ファン感謝祭編</a></li>
+<li><a href="/shinycolors/%E6%A5%BD%E6%9B%B2%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E7%86%9F%E7%B7%B4%E5%BA%A6%E4%B8%80%E8%A6%A7" title="楽曲サポート熟練度一覧" class="rel-wiki-page">サポートアイデア一覧</a></li>
+<li><a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2%E3%83%8E%E3%83%BC%E3%83%88%E4%B8%80%E8%A6%A7" title="アイデアノート一覧" class="rel-wiki-page">アイデアノート一覧</a></li></ul>
+<p><strong>【G.R.A.D.編】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/G.R.A.D.%E7%B7%A8" title="G.R.A.D.編" class="rel-wiki-page">G.R.A.D.編</a>
+<ul class="list2"><li><a href="/shinycolors/G.R.A.D.%E7%B7%A8#hirameki" title="G.R.A.D.編" class="rel-wiki-page">ひらめき対応表</a></li>
+<li><a href="/shinycolors/G.R.A.D.%E7%B7%A8#LiveOnGRAD" title="G.R.A.D.編" class="rel-wiki-page">ライブ攻略</a></li></ul></li>
+<li><a href="/shinycolors/%E3%82%A2%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3%E4%B8%80%E8%A6%A7" title="アビリティ一覧" class="rel-wiki-page">アビリティ一覧</a></li></ul>
+<p><strong>【Landing point編】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/Landing%20Point%E7%B7%A8" title="Landing Point編" class="rel-wiki-page">Landing Point編</a></li>
+<li><a href="/shinycolors/%E6%A5%BD%E6%9B%B2%E4%B8%80%E8%A6%A7%28Landing%20Point%E7%B7%A8%29" title="楽曲一覧(Landing Point編)" class="rel-wiki-page">楽曲一覧</a></li>
+<li><a href="/shinycolors/%E6%A5%BD%E6%9B%B2%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E7%86%9F%E7%B7%B4%E5%BA%A6%E4%B8%80%E8%A6%A7" title="楽曲サポート熟練度一覧" class="rel-wiki-page">サポート熟練度</a></li></ul>
+<p><strong>【S.T.E.P.編】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/S.T.E.P.%E7%B7%A8" title="S.T.E.P.編" class="rel-wiki-page">S.T.E.P.編</a><br />
+・<a href="/shinycolors/S.T.E.P.%E7%B7%A8#live_skd_block" title="S.T.E.P.編" class="rel-wiki-page">開催スケジュール</a><br />
+・<a href="/shinycolors/S.T.E.P.%E7%B7%A8#live_schedule" title="S.T.E.P.編" class="rel-wiki-page">オデ・ライブ詳細</a></li>
+<li><a href="/shinycolors/%E3%83%8E%E3%82%A6%E3%83%8F%E3%82%A6%E3%83%96%E3%83%83%E3%82%AF" title="ノウハウブック" class="rel-wiki-page">ノウハウブック</a></li></ul>
+<p><strong>【say ”Halo”編】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/say%20%E2%80%9DHalo%E2%80%9D%E7%B7%A8" title="say ”Halo”編" class="rel-wiki-page">say ”Halo”編</a><br />
+・<a href="/shinycolors/say%20%E2%80%9DHalo%E2%80%9D%E7%B7%A8#advice-icon" title="say ”Halo”編" class="rel-wiki-page">アドバイス対応表</a><br />
+・<a href="/shinycolors/say%20%E2%80%9DHalo%E2%80%9D%E7%B7%A8#LINK_arrange" title="say ”Halo”編" class="rel-wiki-page">LINKアピール切替</a><br />
+・<a href="/shinycolors/say%20%E2%80%9DHalo%E2%80%9D%E7%B7%A8#live_program" title="say ”Halo”編" class="rel-wiki-page">オデ・ライブ詳細</a></li></ul>
+<p><strong>【フェス】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/%E3%83%95%E3%82%A7%E3%82%B9" title="フェス" class="rel-wiki-page">フェスの基本</a></li>
+<li><a href="/shinycolors/%E3%83%95%E3%82%A7%E3%82%B9%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E8%82%B2%E6%88%90" title="フェスアイドル育成" class="rel-wiki-page">フェスアイドル育成</a></li>
+<li><a href="/shinycolors/%E9%81%8E%E5%8E%BB%E3%81%AE%E3%83%95%E3%82%A7%E3%82%B9%E6%83%85%E5%A0%B1" title="過去のフェス情報" class="rel-wiki-page">過去のフェス情報</a></li></ul>
+<p><strong>【イベント】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/%E3%82%B3%E3%83%A9%E3%83%9C%E3%83%95%E3%82%A7%E3%82%B9%E3%81%AE%E5%9F%BA%E6%9C%AC" title="コラボフェスの基本" class="rel-wiki-page">コラボフェスの基本</a></li>
+<li><a href="/shinycolors/%E3%83%95%E3%82%A7%E3%82%B9%E3%83%84%E3%82%A2%E3%83%BC%E3%82%BA%E3%81%AE%E5%9F%BA%E6%9C%AC" title="フェスツアーズの基本" class="rel-wiki-page">フェスツアーズの基本</a></li>
+<li><a href="/shinycolors/%E5%A4%A9%E4%BA%95%E7%A4%BE%E9%95%B7%E3%81%8B%E3%82%89%E3%81%AE%E6%8C%87%E4%BB%A4_%E4%B8%80%E8%A6%A7" title="天井社長からの指令_一覧" class="rel-wiki-page">天井社長からの宿題</a></li>
+<li><a href="/shinycolors/%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%8B%E3%83%BCPR%E3%82%AA%E3%83%95%E3%82%A1%E3%83%BC%20Vol.1" title="シャイニーPRオファー Vol.1" class="rel-wiki-page">シャイニーPRオファー</a></li>
+<li><a href="/shinycolors/283%E3%83%97%E3%83%AD%E5%85%AC%E5%BC%8F%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E3%83%BB%E7%89%B9%E5%88%A5%E4%BC%81%E7%94%BB" title="283プロ公式チャンネル・特別企画" class="rel-wiki-page">283プロ公式チャンネル特別企画</a></li></ul>
+<h3 id="h3_content_6_4" class="heading-after-first">ユニット編成対策<a class="anchor" name ="menubar_unit"></a></h3>
+<ul class="list1"><li><a href="/shinycolors/%E3%83%95%E3%82%A7%E3%82%B9%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E8%82%B2%E6%88%90/%E7%B7%A8%E6%88%90%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB01" title="フェスアイドル育成/編成サンプル01" class="rel-wiki-page">ユニット編成サンプル</a></li>
+<li><a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E8%BF%BD%E5%8A%A0%E9%A0%86" title="アイドル追加順" class="rel-wiki-page">アイドル追加順</a></li></ul>
+<p><strong>【プロデュースアイドル】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E4%B8%80%E8%A6%A7" title="プロデュースアイドル一覧" class="rel-wiki-page">プロデュースアイドル一覧</a></li>
+<li><a href="/shinycolors/%E3%83%A9%E3%82%A4%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7%E3%80%90%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9%E3%80%91" title="ライブスキル一覧【プロデュース】" class="rel-wiki-page">ライブスキル一覧</a></li>
+<li><a href="/shinycolors/%E3%83%91%E3%83%83%E3%82%B7%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7%E3%80%90%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9%E3%80%91" title="パッシブスキル一覧【プロデュース】" class="rel-wiki-page">パッシブスキル一覧</a>
+<ul class="list2"><li>アイドル別<br />
+<a href="/shinycolors/%E3%83%91%E3%83%83%E3%82%B7%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7%E3%80%90%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9%E3%80%91/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E5%88%A5%E3%80%90P-SSR%E3%80%91" title="パッシブスキル一覧【プロデュース】/アイドル別【P-SSR】" class="rel-wiki-page">SSR</a> /<a href="/shinycolors/%E3%83%91%E3%83%83%E3%82%B7%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7%E3%80%90%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9%E3%80%91/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E5%88%A5%E3%80%90P-SR%E3%80%91" title="パッシブスキル一覧【プロデュース】/アイドル別【P-SR】" class="rel-wiki-page">SR</a> /<a href="/shinycolors/%E3%83%91%E3%83%83%E3%82%B7%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7%E3%80%90%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9%E3%80%91/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E5%88%A5%E3%80%90P-R%EF%BD%A5N%E3%80%91" title="パッシブスキル一覧【プロデュース】/アイドル別【P-R･N】" class="rel-wiki-page">R･N</a></li>
+<li><a href="/shinycolors/%E3%83%91%E3%83%83%E3%82%B7%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7%E3%80%90%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9%E3%80%91/2%E5%87%B8%E3%83%91%E3%83%83%E3%82%B7%E3%83%96%E4%B8%80%E8%A6%A7%E3%80%90%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9%E3%80%91" title="パッシブスキル一覧【プロデュース】/2凸パッシブ一覧【プロデュース】" class="rel-wiki-page">金パッシブ</a></li></ul></li>
+<li><a href="/shinycolors/%E4%B8%8A%E9%99%90UP%E4%B8%80%E8%A6%A7%E3%80%90%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9%E3%80%91" title="上限UP一覧【プロデュース】" class="rel-wiki-page">上限UP一覧</a></li>
+<li><a href="/shinycolors/%E6%80%9D%E3%81%84%E5%87%BA%E3%82%A2%E3%83%94%E3%83%BC%E3%83%AB%E4%B8%80%E8%A6%A7" title="思い出アピール一覧" class="rel-wiki-page">思い出アピール一覧</a></li></ul>
+<p><strong>【サポートアイドル】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E4%B8%80%E8%A6%A7" title="サポートアイドル一覧" class="rel-wiki-page">サポートアイドル一覧</a></li>
+<li><a href="/shinycolors/%E3%82%B5%E3%83%9D%E3%82%A4%E3%83%99%E6%97%A9%E8%A6%8B%E8%A1%A8" title="サポイベ早見表" class="rel-wiki-page">サポイベ＆スキル早見</a></li>
+<li>ライブスキル一覧
+<ul class="list2"><li><a href="/shinycolors/%E3%83%A9%E3%82%A4%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7%E3%80%90%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%80%91" title="ライブスキル一覧【サポート】" class="rel-wiki-page">パネル</a> / <a href="/shinycolors/%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E8%87%AA%E8%BA%AB%E3%81%AE%E3%83%A9%E3%82%A4%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB" title="サポートアイドル自身のライブスキル" class="rel-wiki-page">所持</a></li></ul></li>
+<li><a href="/shinycolors/%E3%83%91%E3%83%83%E3%82%B7%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7" title="パッシブスキル一覧" class="rel-wiki-page">パッシブスキル一覧</a>
+<ul class="list2"><li>アイドル別<br />
+<a href="/shinycolors/%E3%83%91%E3%83%83%E3%82%B7%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E5%88%A5%E3%80%90S-SSR%E3%80%91" title="パッシブスキル一覧/アイドル別【S-SSR】" class="rel-wiki-page">SSR</a> /<a href="/shinycolors/%E3%83%91%E3%83%83%E3%82%B7%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E5%88%A5%E3%80%90S-SR%E3%80%91" title="パッシブスキル一覧/アイドル別【S-SR】" class="rel-wiki-page">SR</a> /<a href="/shinycolors/%E3%83%91%E3%83%83%E3%82%B7%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E5%88%A5%E3%80%90S-R%EF%BD%A5N%E3%80%91" title="パッシブスキル一覧/アイドル別【S-R･N】" class="rel-wiki-page">R･N</a></li>
+<li><a href="/shinycolors/%E3%83%91%E3%83%83%E3%82%B7%E3%83%96%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7/2%E5%87%B8%E3%83%91%E3%83%83%E3%82%B7%E3%83%96%E4%B8%80%E8%A6%A7%E3%80%90%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%80%91" title="パッシブスキル一覧/2凸パッシブ一覧【サポート】" class="rel-wiki-page">金パッシブ</a></li></ul></li>
+<li><a href="/shinycolors/%E4%B8%8A%E9%99%90UP%E4%B8%80%E8%A6%A7%E3%80%90%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%80%91" title="上限UP一覧【サポート】" class="rel-wiki-page">上限UP一覧</a></li>
+<li><a href="/shinycolors/%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7" title="サポートスキル一覧" class="rel-wiki-page">サポートスキル一覧</a>
+<ul class="list2"><li><a href="/shinycolors/%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7#gbe1e309" title="サポートスキル一覧" class="rel-wiki-page">早見表</a> / <a href="/shinycolors/%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%82%B9%E3%82%AD%E3%83%AB%E4%B8%80%E8%A6%A7#hc5f3c57" title="サポートスキル一覧" class="rel-wiki-page">逆引き</a></li></ul></li>
+<li><a href="/shinycolors/%E3%82%B5%E3%83%9D%E3%82%A4%E3%83%99%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9%E4%B8%80%E8%A6%A7" title="サポイベ登場人物一覧" class="rel-wiki-page">サポイベ登場人物一覧</a></li></ul>
+<h2 id="h2_content_6_5" class="heading-after-first">283プロ所属アイドル<a class="anchor" name ="menubar_idol"></a></h2>
+<p><a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B4%B9%E4%BB%8B#a0ffb3ec" title="アイドルユニット紹介" class="rel-wiki-page"><span class="wikicolor" style="color:black; background-color:yellow"><strong>&thinsp;illumination STARS&thinsp;</strong></span></a></p>
+<ul class="list1"><li><a href="/shinycolors/%E6%AB%BB%E6%9C%A8%E7%9C%9F%E4%B9%83" title="櫻木真乃" class="rel-wiki-page">櫻木真乃</a></li>
+<li><a href="/shinycolors/%E9%A2%A8%E9%87%8E%E7%81%AF%E7%B9%94" title="風野灯織" class="rel-wiki-page">風野灯織</a></li>
+<li><a href="/shinycolors/%E5%85%AB%E5%AE%AE%E3%82%81%E3%81%90%E3%82%8B" title="八宮めぐる" class="rel-wiki-page">八宮めぐる</a></li></ul>
+<p><a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B4%B9%E4%BB%8B#w250fee2" title="アイドルユニット紹介" class="rel-wiki-page"><span class="wikicolor" style="color:black; background-color:orchid"><strong>&thinsp;L'Antica&thinsp;</strong></span></a></p>
+<ul class="list1"><li><a href="/shinycolors/%E6%9C%88%E5%B2%A1%E6%81%8B%E9%90%98" title="月岡恋鐘" class="rel-wiki-page">月岡恋鐘</a></li>
+<li><a href="/shinycolors/%E7%94%B0%E4%B8%AD%E6%91%A9%E7%BE%8E%E3%80%85" title="田中摩美々" class="rel-wiki-page">田中摩美々</a></li>
+<li><a href="/shinycolors/%E7%99%BD%E7%80%AC%E5%92%B2%E8%80%B6" title="白瀬咲耶" class="rel-wiki-page">白瀬咲耶</a></li>
+<li><a href="/shinycolors/%E4%B8%89%E5%B3%B0%E7%B5%90%E8%8F%AF" title="三峰結華" class="rel-wiki-page">三峰結華</a></li>
+<li><a href="/shinycolors/%E5%B9%BD%E8%B0%B7%E9%9C%A7%E5%AD%90" title="幽谷霧子" class="rel-wiki-page">幽谷霧子</a></li></ul>
+<p><a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B4%B9%E4%BB%8B#de265f30" title="アイドルユニット紹介" class="rel-wiki-page"><span class="wikicolor" style="color:black; background-color:orange"><strong>&thinsp;放課後ｸﾗｲﾏｯｸｽｶﾞｰﾙｽﾞ&thinsp;</strong></span></a></p>
+<ul class="list1"><li><a href="/shinycolors/%E5%B0%8F%E5%AE%AE%E6%9E%9C%E7%A9%82" title="小宮果穂" class="rel-wiki-page">小宮果穂</a></li>
+<li><a href="/shinycolors/%E5%9C%92%E7%94%B0%E6%99%BA%E4%BB%A3%E5%AD%90" title="園田智代子" class="rel-wiki-page">園田智代子</a></li>
+<li><a href="/shinycolors/%E8%A5%BF%E5%9F%8E%E6%A8%B9%E9%87%8C" title="西城樹里" class="rel-wiki-page">西城樹里</a></li>
+<li><a href="/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" title="杜野凛世" class="rel-wiki-page">杜野凛世</a></li>
+<li><a href="/shinycolors/%E6%9C%89%E6%A0%96%E5%B7%9D%E5%A4%8F%E8%91%89" title="有栖川夏葉" class="rel-wiki-page">有栖川夏葉</a></li></ul>
+<p><a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B4%B9%E4%BB%8B#i80b160f" title="アイドルユニット紹介" class="rel-wiki-page"><span class="wikicolor" style="color:black; background-color:pink"><strong>&thinsp;ALSTROEMERIA&thinsp;</strong></span></a></p>
+<ul class="list1"><li><a href="/shinycolors/%E5%A4%A7%E5%B4%8E%E7%94%98%E5%A5%88" title="大崎甘奈" class="rel-wiki-page">大崎甘奈</a></li>
+<li><a href="/shinycolors/%E5%A4%A7%E5%B4%8E%E7%94%9C%E8%8A%B1" title="大崎甜花" class="rel-wiki-page">大崎甜花</a></li>
+<li><a href="/shinycolors/%E6%A1%91%E5%B1%B1%E5%8D%83%E9%9B%AA" title="桑山千雪" class="rel-wiki-page">桑山千雪</a></li></ul>
+<p><a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B4%B9%E4%BB%8B#p30a6689" title="アイドルユニット紹介" class="rel-wiki-page"><span class="wikicolor" style="color:black; background-color:red"><strong>&thinsp;Straylight&thinsp;</strong></span></a></p>
+<ul class="list1"><li><a href="/shinycolors/%E8%8A%B9%E6%B2%A2%E3%81%82%E3%81%95%E3%81%B2" title="芹沢あさひ" class="rel-wiki-page">芹沢あさひ</a></li>
+<li><a href="/shinycolors/%E9%BB%9B%E5%86%AC%E5%84%AA%E5%AD%90" title="黛冬優子" class="rel-wiki-page">黛冬優子</a></li>
+<li><a href="/shinycolors/%E5%92%8C%E6%B3%89%E6%84%9B%E4%BE%9D" title="和泉愛依" class="rel-wiki-page">和泉愛依</a></li></ul>
+<p><a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B4%B9%E4%BB%8B#q7f1d140" title="アイドルユニット紹介" class="rel-wiki-page"><span class="wikicolor" style="color:white; background-color:darkblue"><strong>&thinsp;noctchill&thinsp;</strong></span></a></p>
+<ul class="list1"><li><a href="/shinycolors/%E6%B5%85%E5%80%89%E9%80%8F" title="浅倉透" class="rel-wiki-page">浅倉透</a></li>
+<li><a href="/shinycolors/%E6%A8%8B%E5%8F%A3%E5%86%86%E9%A6%99" title="樋口円香" class="rel-wiki-page">樋口円香</a></li>
+<li><a href="/shinycolors/%E7%A6%8F%E4%B8%B8%E5%B0%8F%E7%B3%B8" title="福丸小糸" class="rel-wiki-page">福丸小糸</a></li>
+<li><a href="/shinycolors/%E5%B8%82%E5%B7%9D%E9%9B%9B%E8%8F%9C" title="市川雛菜" class="rel-wiki-page">市川雛菜</a></li></ul>
+<p><a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B4%B9%E4%BB%8B#lf8420a4" title="アイドルユニット紹介" class="rel-wiki-page"><span class="wikicolor" style="color:white; background-color:seagreen"><strong>&thinsp;SHHis&thinsp;</strong></span></a></p>
+<ul class="list1"><li><a href="/shinycolors/%E4%B8%83%E8%8D%89%E3%81%AB%E3%81%A1%E3%81%8B" title="七草にちか" class="rel-wiki-page">七草にちか</a></li>
+<li><a href="/shinycolors/%E7%B7%8B%E7%94%B0%E7%BE%8E%E7%90%B4" title="緋田美琴" class="rel-wiki-page">緋田美琴</a></li></ul>
+<p><a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B4%B9%E4%BB%8B#aee53f55" title="アイドルユニット紹介" class="rel-wiki-page"><span class="wikicolor" style="color:white; background-color:black"><strong>&thinsp;CoMETIK&thinsp;</strong></span></a></p>
+<ul class="list1"><li><a href="/shinycolors/%E6%96%91%E9%B3%A9%E3%83%AB%E3%82%AB" title="斑鳩ルカ" class="rel-wiki-page">斑鳩ルカ</a></li>
+<li><a href="/shinycolors/%E9%88%B4%E6%9C%A8%E7%BE%BD%E9%82%A3" title="鈴木羽那" class="rel-wiki-page">鈴木羽那</a></li>
+<li><a href="/shinycolors/%E9%83%81%E7%94%B0%E3%81%AF%E3%82%8B%E3%81%8D" title="郁田はるき" class="rel-wiki-page">郁田はるき</a></li></ul>
+<hr class="full_hr" />
+<p><strong>【283プロ事務員】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/%E4%B8%83%E8%8D%89%E3%81%AF%E3%81%A5%E3%81%8D" title="七草はづき" class="rel-wiki-page">七草はづき</a></li></ul>
+<p><strong>【コラボアイドル】</strong></p>
+<ul class="list1"><li><a href="/shinycolors/%E3%82%B3%E3%83%A9%E3%83%9C%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB#oshi-no-ko" title="コラボアイドル" class="rel-wiki-page">【推しの子】</a></li></ul>
+<hr class="full_hr" />
+<p><a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88%E7%B4%B9%E4%BB%8B" title="アイドルユニット紹介" class="rel-wiki-page">アイドルユニット紹介</a><br />
+<a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E4%B8%80%E8%A6%A7" title="アイドルプロフィール一覧" class="rel-wiki-page">プロフィール一覧</a><br />
+<a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E5%91%BC%E7%A7%B0%E4%B8%80%E8%A6%A7" title="アイドル呼称一覧" class="rel-wiki-page">アイドル呼称一覧</a><br />
+<a href="/shinycolors/%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B5%E3%83%BC%E3%83%87%E3%82%B9%E3%82%AF#z29a301c" title="プロデューサーデスク" class="rel-wiki-page">アイドルの衣装</a><br />
+アイドルのセリフ集<br />
+　<a href="/shinycolors/%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3%E6%99%82%E3%81%AE%E3%82%BB%E3%83%AA%E3%83%95%E9%9B%86" title="オーディション時のセリフ集" class="rel-wiki-page">オデ</a> / <a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%81%AE%E6%B1%8E%E7%94%A8%E3%82%BB%E3%83%AA%E3%83%95%E9%9B%86" title="アイドルの汎用セリフ集" class="rel-wiki-page">汎用</a> / <a href="/shinycolors/%E3%83%95%E3%82%A7%E3%82%B9%E6%8E%A7%E5%AE%A4%E3%81%AE%E3%82%BB%E3%83%AA%E3%83%95%E9%9B%86" title="フェス控室のセリフ集" class="rel-wiki-page">控室</a><br />
+<a href="/shinycolors/%E5%B0%8F%E3%83%8D%E3%82%BF#LetYouKnow" title="小ネタ" class="rel-wiki-page">通知メッセージ</a></p>
+<h2 id="h2_content_6_6" class="heading-after-first">全般</h2>
+<p><a href="/shinycolors/%E4%BB%95%E6%A7%98%E8%80%83%E5%AF%9F" title="仕様考察" class="rel-wiki-page">仕様考察</a><br />
+<a href="/shinycolors/%E5%B0%8F%E3%83%8D%E3%82%BF" title="小ネタ" class="rel-wiki-page">小ネタ</a><br />
+<a href="/shinycolors/%E7%94%A8%E8%AA%9E%E9%9B%86" title="用語集" class="rel-wiki-page">用語集</a><br />
+<a href="/shinycolors/%E3%82%AC%E3%82%B7%E3%83%A3/%E9%81%8E%E5%8E%BB%E3%82%AC%E3%82%B7%E3%83%A3log01#gasha_cf" title="ガシャ/過去ガシャlog01" class="rel-wiki-page">ガシャキャッチフレーズ</a><br />
+<a href="/shinycolors/%E7%84%A1%E6%96%99%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%89" title="無料シリアルコード" class="rel-wiki-page">シリアルコード等</a><br />
+<a href="/shinycolors/%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E6%A9%9F%E8%83%BD" title="チェックイン機能" class="rel-wiki-page">チェックイン機能</a><br />
+<a href="/shinycolors/%E6%A5%BD%E6%9B%B2%E6%83%85%E5%A0%B1" title="楽曲情報" class="rel-wiki-page">楽曲情報</a><br />
+<a href="/shinycolors/%E3%83%A9%E3%82%A4%E3%83%96%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1" title="ライブイベント情報" class="rel-wiki-page">ライブイベント情報</a><br />
+<a href="/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E4%B8%80%E8%A6%A7#VoiceActor" title="アイドルプロフィール一覧" class="rel-wiki-page">声優一覧</a><br />
+<a href="/shinycolors/%E3%82%A2%E3%83%8B%E3%83%A1%E9%80%A3%E5%8B%95%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3%E6%83%85%E5%A0%B1" title="アニメ連動キャンペーン情報" class="rel-wiki-page">アニメ放送記念CP</a><br />
+<a href="/shinycolors/%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88" title="アップデート" class="rel-wiki-page">アップデート/不具合情報</a></p>
+<h3 id="h3_content_6_7" class="heading-after-first">編集</h3>
+<p><a href="/shinycolors/%E7%B7%A8%E9%9B%86%E7%9B%B8%E8%AB%87%E6%89%80" title="編集相談所" class="rel-wiki-page">編集相談所</a><br />
+<a href="/shinycolors/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E7%AD%89" title="テンプレート等" class="rel-wiki-page">テンプレート</a><br />
+<a href="/shinycolors/%E7%B7%A8%E9%9B%86%E3%81%AE%E6%89%8B%E5%BC%95%E3%81%8D" title="編集の手引き" class="rel-wiki-page">編集の手引き</a></p>
+<hr class="full_hr" />
+<p><strong>【Menu内カテゴリ移動】</strong><br />
+△<a href="#menubar_guide">ガイド</a>へ<br />
+△<a href="#menubar_prd">プロデュースの基本</a>へ<br />
+△<a href="#menubar_game">攻略情報</a>へ<br />
+△<a href="#menubar_unit">ユニット編成対策</a>へ<br />
+△<a href="#menubar_idol">283プロ所属アイドル</a>へ</p>
+<div class="recent-container" data-recent-hash="8818ce135b34cd17e8087d3ace8e5765"></div>
+<hr class="full_hr" />
+<div style="text-align:center">〔<a href="/shinycolors/%E4%BA%BA%E6%B0%97100" title="人気100" class="rel-wiki-page"><strong>累計人気</strong></a>〕〔<a href="/shinycolors/%E4%BB%8A%E6%97%A5100" title="今日100" class="rel-wiki-page"><strong>今日人気</strong></a>〕<br />
+〔<a href="/shinycolors/RecentChanges" title="RecentChanges" class="rel-wiki-page"><strong>最新</strong></a>〕</div>
+<hr class="full_hr" />
+<div style="text-align:right"><span style="font-size:10px">NOW.<span class="wikiwiki-online">?</span></span><br />
+<span style="font-size:10px">T.<span class="wikiwiki-counter wikiwiki-counter-today">?</span>　Y.<span class="wikiwiki-counter wikiwiki-counter-yesterday">?</span></span><br />
+<span style="font-size:10px">TOTAL.<span class="wikiwiki-counter wikiwiki-counter-total">?</span></span></div>
+<hr class="full_hr" />
+<div style="text-align:right"><a href="/shinycolors/?cmd=edit&amp;page=MenuBar" title="編集:MenuBar"  rel="nofollow">MenuBar編集</a></div>                </div>
+                <div class="admenu-sticky">
+<!-- /19033742/WIKIWIKI_PC_MENU_STICKY -->
+<div id='div-gpt-ad-1567834179057-0'></div>
+</div>
+<script>
+if (document.documentElement.clientWidth > 805 && !wi_ismobile && wi_group === 'N' && wi_agreement === 'false' && !wi_isinbound &&
+    document.getElementById('body').clientHeight - document.getElementById('menubar').clientHeight > 1000) {
+    googletag.cmd.push(() => {
+        googletag.display(
+            googletag.defineSlot('/19033742/WIKIWIKI_PC_MENU_STICKY', [[120,600],[160,600],[1,1]], 'div-gpt-ad-1567834179057-0').addService(googletag.pubads())
+        );
+    });
+    defineSlotFlux.push({"slotID": "div-gpt-ad-1567834179057-0", "sizes": [[160,600]], "slotName":"WIKIWIKI_PC_MENU_STICKY"});
+}
+</script>
+<style>
+.admenu-sticky {
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    margin-top: 50px;
+    top: 50px;
+    max-width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+
+            </div>
+            </div>
+
+            <div class="container">
+            <div id="note">
+                <hr class="note_hr" /><a id="notefoot_1" href="#notetext_1" class="note_super">*1</a>
+<span class="small">シャニアニ第3章 劇場先行上映記念 特典</span><br>
+<a id="notefoot_2" href="#notetext_2" class="note_super">*2</a>
+<span class="small">2024/05/11～2024/05/17 アニメ第6話振り返りログインボーナス 期間中1日1枚、最大5枚配布</span><br>
+<a id="notefoot_3" href="#notetext_3" class="note_super">*3</a>
+<span class="small">2024/10/19～2024/10/25 有償限定 アニメ放送記念！SSR2倍！アニメ登場ユニット限定ステップアップガシャ</span><br>            </div>
+        </div>
+    
+    <div id="footer">
+                <div class="container">
+            <hr />
+            <div class="footer-block clearfix">
+                <div class="footer-block-item-left" id="signature">
+                    <!-- google_ad_section_start(weight=ignore) -->
+                    レンタルWIKI by <a href="https://wikiwiki.jp/" title="無料レンタルWIKIサービス">WIKIWIKI.jp*</a>&nbsp;/&nbsp;
+                    Designed by <a href="https://wikiwiki.jp/pp/skin-design-policy" title="スキンデザインのご利用についてのお願い">Olivia</a>&nbsp;/&nbsp;
+                    <a href="https://wikiwiki.jp/pp/aboutad" title="広告について">広告について</a>&nbsp;/&nbsp;
+                    無料レンタル掲示板 <a href="https://z.wikiwiki.jp/" title="zawazawa">zawazawa</a>
+                    <!-- google_ad_section_end -->
+                </div>
+                <div class="footer-block-item-right">
+                    <div class="footer-mixirss">
+                        <div class="toolbar"><a href="/shinycolors/::cmd/mixirss" title="最終更新のRSS" rel="nofollow"><span class="system-icon rss"></span></a></div>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pageload" style="display: none" data-pageload="{&quot;time&quot;:{&quot;all&quot;:{&quot;real&quot;:0.010277986526489258,&quot;cost&quot;:0.16628527641296387},&quot;body&quot;:{&quot;real&quot;:0.002827882766723633,&quot;cost&quot;:0.11916589736938477},&quot;main&quot;:{&quot;real&quot;:0.11633801460266113,&quot;cost&quot;:0.11633801460266113},&quot;menu&quot;:{&quot;real&quot;:0.03792095184326172,&quot;cost&quot;:0.03792095184326172},&quot;head&quot;:{&quot;real&quot;:0.0009081363677978516,&quot;cost&quot;:0.0009081363677978516},&quot;foot&quot;:{&quot;real&quot;:0.0008401870727539062,&quot;cost&quot;:0.0008401870727539062}},&quot;include&quot;:1,&quot;memory&quot;:1367472,&quot;io&quot;:{&quot;read&quot;:{&quot;files&quot;:1,&quot;bytes&quot;:8,&quot;locks&quot;:1},&quot;write&quot;:{&quot;files&quot;:0,&quot;bytes&quot;:0,&quot;locks&quot;:0},&quot;directory&quot;:{&quot;traversals&quot;:0,&quot;files&quot;:0},&quot;misc&quot;:40},&quot;contentSize&quot;:{&quot;all&quot;:150831,&quot;body&quot;:110120},&quot;timestamp&quot;:&quot;2026-08-17 13:16:36&quot;}"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/js/fontawesome.min.js" data-auto-replace-svg="false"></script>
+<script type="text/javascript" src="https://cdn.wikiwiki.jp/to/w/common/assets/dist/wikiwiki-12f12e8e7953dee27a03.min.js"></script>
+<script type="text/javascript" src="https://cdn.wikiwiki.jp/to/w/common/assets/dist/wikiwiki-opt-tablesort-591c61cacb9c8beea7b0.min.js"></script>
+    <script>
+        if (window.FontAwesome) {
+            window.FontAwesome.dom.watch();
+        } else {
+            console.warn('FontAwesome is not loaded.');
+        }
+    </script>
+<script type="text/javascript">
+    bootLazy.addJqPluginInit('.accordion-container', function() {
+        this.accordion({
+            headerSelector: '.accordion-header',
+            contentSelector: '.accordion-content',
+            openClassName: 'accordion-open'
+        });
+    });
+</script>
+<script>
+    bootLazy.addJqPluginInit('.wikiwiki-tablesorter-wrapper table', function() {
+        // HINT: tablesorter needs <thead> block before <tbody>
+        this.tablesort();
+    });
+</script>
+<div id="wikiwiki-pageview-counter" data-endpoint="https://counter.wikiwiki.jp/c/shinycolors/pv/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96" style="display: none;"></div>
+<script>
+    $('#wikiwiki-pageview-counter').pageview();
+</script>
+<script>
+    bootLazy.addJqPluginInit('.realtime-countdown', function() {
+        this.realtimeCountdown();
+    });
+</script>
+    <script type="text/javascript">
+        bootLazy.addJqPluginInit('.recent-container[data-recent-hash="8818ce135b34cd17e8087d3ace8e5765"]', function() {
+            this.recent({"timestamp":1786925673,"list":[{"time":1786925673,"page":"BLEND／MIX","link":"/shinycolors/BLEND%EF%BC%8FMIX"},{"time":1786924807,"page":"情報提供","link":"/shinycolors/%E6%83%85%E5%A0%B1%E6%8F%90%E4%BE%9B"},{"time":1786893359,"page":"ミッション","link":"/shinycolors/%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3"},{"time":1786890108,"page":"ライブイベント情報/開催情報log03","link":"/shinycolors/%E3%83%A9%E3%82%A4%E3%83%96%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1/%E9%96%8B%E5%82%AC%E6%83%85%E5%A0%B1log03"},{"time":1786889500,"page":"コメント/283ステージ","link":"/shinycolors/%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88/283%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8"}]});
+        });
+    </script>
+    <script>
+        bootLazy.addJqPluginInit('#responsive-navigation', function() {
+            this.responsiveNavigation({
+                menuBarSelector: '#menubar',
+                editMenuSelector: '#edit-menu',
+
+                mainContentsBottomElement: '#main-contents-bottom',
+                sidebarBottomElement: '#sidebar-bottom',
+                menuBarContainerElement: '#contents .column-left',
+                footerElement: '#footer',
+
+                overlayAdRenderedEventName: 'overlay-ad-rendered',
+                overlayAdMarginTop: 25
+            });
+        });
+    </script>
+    <script>
+        $('#share-button-root').sharePanel({
+            title: "杜野凛世 - シャニマス攻略 Wiki*",
+            controlPanelUrl: "https:\/\/c.wikiwiki.jp\/wiki\/shinycolors\/design",
+            imageUrl: "https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/wikiwiki_ogp.png?v=4",
+            description: "",
+            shareUrl: "https:\/\/wikiwiki.jp\/shinycolors\/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96",
+            shortUrlRequestUrl: "\/shinycolors\/::cmd\/short_url?mode=json&page=%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96",
+            hasOgSettings: false,
+        })
+    </script>
+<script>
+    $('#admin-contact-root').adminContact({
+        logoImgUrl: "https:\/\/cdn.wikiwiki.jp\/to\/w\/common\/image\/pukiwiki.svg?v=4",
+        pageTitle: "シャニマス攻略 Wiki*",
+        controlPanelUrl: "https:\/\/c.wikiwiki.jp\/wiki\/shinycolors\/settings",
+        contact: "",
+        helpLink: 'https://wikiwiki.jp/pp/admin_contact',
+    });
+</script>
+<script>
+$("#load-panel-root").loadpanel({
+    dataSelector: "#pageload",
+    helpLink: 'https://wikiwiki.jp/pp/page_load_panel'
+});
+</script>
+<script>
+    $('.admin-login-status').adminLoginStatus({
+        cookieName: 'login_session',
+    });
+</script>
+<script>
+    $(function() {
+        $('.search-words').searchWordHighlight({
+            paramName: 'word',
+            selector: "#content,#note",
+            limit: 10,
+            markedClassResolver: function (i) { return "word" + i; }
+        });
+    });
+</script>
+<script>$(".realtime-date").realtimeDate();</script>
+<script>
+    $("body").notificationBar();
+</script>
+<script>
+$("#contents").anchorLink({
+    url: '/shinycolors/%E6%9D%9C%E9%87%8E%E5%87%9B%E4%B8%96',
+});
+</script>
+    <script>
+        bootLazy.addJqPluginInit('.tooltip', function() {
+            this.tooltip();
+        });
+    </script>
+    <script>
+        bootLazy.addPlainScript(function() {
+            lightbox.option({
+                resizeDuration: 0
+            });
+        });
+    </script>
+<script>
+    $(function() {
+        window.bootLazy.bootOn(document);
+    });
+</script>
+<script>
+    $(document).pukiwiki();
+</script>
+
+<script>
+jQuery(function() {
+    $('form').usageStatistics({"keyName":"usageStatistics","smsAuth":false,"hasPosted":false});
+    $(document).browsingStatistics({
+        keyName: 'browsingStatistics'
+    });
+});
+</script>
+</body>
+</html>
