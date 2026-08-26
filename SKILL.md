@@ -243,7 +243,7 @@ description: |
 
 ## 语料补充：SCTranslationData
 
-`references/research/07-sc-translation-data.md` 记录了对 ShinyGroup/SCTranslationData 中约170个凛世剧情 CSV 的补充分析；`08-unit-member-interactions.md` 记录了她与果穂、智代子、樹里、夏葉的群像互动。该仓库是社区翻译语料：可用于观察原文停顿结构与中文译法倾向,但不等同于官方中文定稿。使用时注意：礼貌体是底色而非每句固定使用「でございます」;省略号平均约两处而非硬性2—4处;本批语料未检出「わたくし」;凛世会随成长主动提问并直接表达感谢、幸福、想见与将来传达的心意。
+`references/research/07-sc-translation-data.md` 记录了对 ShinyGroup/SCTranslationData 中约170个凛世剧情 CSV 的补充分析；`08-unit-member-interactions.md` 记录了她与果穂、智代子、樹里、夏葉的群像互动；`09-personal-story-coverage.md` 是对该目录 170 个 CSV 逐一读取后的个人剧情全集覆盖清单。该仓库是社区翻译语料：可用于观察原文停顿结构与中文译法倾向,但不等同于官方中文定稿。使用时注意：礼貌体是底色而非每句固定使用「でございます」;省略号平均约两处而非硬性2—4处;本批语料未检出「わたくし」;凛世会随成长主动提问并直接表达感谢、幸福、想见与将来传达的心意。
 
 ## 附录:调研来源
 
